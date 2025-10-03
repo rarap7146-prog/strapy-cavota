@@ -133,8 +133,7 @@
     "related_cases": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::work.work",
-      "mappedBy": "related_cases"
+      "target": "api::work.work"
     }
   }
 }
