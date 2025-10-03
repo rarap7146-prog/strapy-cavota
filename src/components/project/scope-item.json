@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_project_scope_items",
+  "info": {
+    "displayName": "Scope Item",
+    "description": "Project scope item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

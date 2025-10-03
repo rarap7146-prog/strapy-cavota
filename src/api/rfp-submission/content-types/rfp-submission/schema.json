@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rfp_submissions",
+  "info": {
+    "singularName": "rfp-submission",
+    "pluralName": "rfp-submissions",
+    "displayName": "RFP Submission",
+    "description": "Request for Proposal submissions - form intake, non-public"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "enumeration",
+      "enum": [
+        "awareness",
+        "leads",
+        "sales",
+        "app_installs",
+        "automation",
+        "other"
+      ],
+      "multiple": true
+    },
+    "scope": {
+      "type": "enumeration",
+      "enum": [
+        "ads",
+        "web",
+        "influencer",
+        "seo",
+        "apps",
+        "bot",
+        "mentorship"
+      ],
+      "multiple": true
+    },
+    "budget_band": {
+      "type": "enumeration",
+      "enum": [
+        "under_50m_idr",
+        "from_50m_200m_idr",
+        "from_200m_1b_idr",
+        "over_1b_idr",
+        "multi_million_usd"
+      ]
+    },
+    "timeline": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "locale": {
+      "type": "enumeration",
+      "enum": [
+        "id",
+        "en"
+      ],
+      "required": true,
+      "default": "id"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "reviewed",
+        "contacted"
+      ],
+      "required": true,
+      "default": "new"
+    }
+  }
+}

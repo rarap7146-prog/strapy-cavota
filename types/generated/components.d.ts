@@ -1,5 +1,64 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface MediaAsset extends Struct.ComponentSchema {
+  collectionName: 'components_media_assets';
+  info: {
+    description: 'Media asset with metadata';
+    displayName: 'Asset';
+  };
+  attributes: {
+    alt: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    caption: Schema.Attribute.String;
+    file: Schema.Attribute.Media<'images' | 'videos'> &
+      Schema.Attribute.Required;
+    kind: Schema.Attribute.Enumeration<['image', 'video']>;
+  };
+}
+
+export interface MetricsKpi extends Struct.ComponentSchema {
+  collectionName: 'components_metrics_kpis';
+  info: {
+    description: 'Key Performance Indicator metric';
+    displayName: 'KPI';
+  };
+  attributes: {
+    delta_auto: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    unit: Schema.Attribute.String;
+    value_after: Schema.Attribute.Decimal;
+    value_before: Schema.Attribute.Decimal;
+  };
+}
+
+export interface ProjectScopeItem extends Struct.ComponentSchema {
+  collectionName: 'components_project_scope_items';
+  info: {
+    description: 'Project scope item';
+    displayName: 'Scope Item';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface ProjectTimeframe extends Struct.ComponentSchema {
+  collectionName: 'components_project_timeframes';
+  info: {
+    description: 'Project timeframe with start and end dates';
+    displayName: 'Timeframe';
+  };
+  attributes: {
+    end_date: Schema.Attribute.Date;
+    start_date: Schema.Attribute.Date;
+  };
+}
+
 export interface SectionsCaseCarousel extends Struct.ComponentSchema {
   collectionName: 'components_sections_case_carousels';
   info: {
@@ -306,6 +365,10 @@ export interface UiStepItem extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'media.asset': MediaAsset;
+      'metrics.kpi': MetricsKpi;
+      'project.scope-item': ProjectScopeItem;
+      'project.timeframe': ProjectTimeframe;
       'sections.case-carousel': SectionsCaseCarousel;
       'sections.cta-strip': SectionsCtaStrip;
       'sections.faq': SectionsFaq;

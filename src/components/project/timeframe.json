@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_project_timeframes",
+  "info": {
+    "displayName": "Timeframe",
+    "description": "Project timeframe with start and end dates"
+  },
+  "options": {},
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}

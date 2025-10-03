@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_metrics_kpis",
+  "info": {
+    "displayName": "KPI",
+    "description": "Key Performance Indicator metric"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value_before": {
+      "type": "decimal"
+    },
+    "value_after": {
+      "type": "decimal"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "delta_auto": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

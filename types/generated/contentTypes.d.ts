@@ -430,6 +430,79 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
+  collectionName: 'insights';
+  info: {
+    description: 'Blog posts, industry insights, and thought leadership content';
+    displayName: 'Insight';
+    pluralName: 'insights';
+    singularName: 'insight';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+    seo: {
+      enabled: true;
+    };
+  };
+  attributes: {
+    body: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hero_image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::insight.insight'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    reading_time: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
+    related_cases: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
+    slug: Schema.Attribute.UID<'title'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    summary: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    translation_key: Schema.Attribute.UID & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
@@ -504,6 +577,224 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
           localized: false;
         };
       }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRfpSubmissionRfpSubmission
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'rfp_submissions';
+  info: {
+    description: 'Request for Proposal submissions - form intake, non-public';
+    displayName: 'RFP Submission';
+    pluralName: 'rfp-submissions';
+    singularName: 'rfp-submission';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    budget_band: Schema.Attribute.Enumeration<
+      [
+        'under_50m_idr',
+        'from_50m_200m_idr',
+        'from_200m_1b_idr',
+        'over_1b_idr',
+        'multi_million_usd',
+      ]
+    >;
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    goals: Schema.Attribute.Enumeration<
+      ['awareness', 'leads', 'sales', 'app_installs', 'automation', 'other']
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rfp-submission.rfp-submission'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    scope: Schema.Attribute.Enumeration<
+      ['ads', 'web', 'influencer', 'seo', 'apps', 'bot', 'mentorship']
+    >;
+    source: Schema.Attribute.String;
+    status: Schema.Attribute.Enumeration<['new', 'reviewed', 'contacted']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'new'>;
+    timeline: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTagTag extends Struct.CollectionTypeSchema {
+  collectionName: 'tags';
+  info: {
+    description: 'Lightweight taxonomy for work and insights';
+    displayName: 'Tag';
+    pluralName: 'tags';
+    singularName: 'tag';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    insights: Schema.Attribute.Relation<'manyToMany', 'api::insight.insight'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tag.tag'> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    scope: Schema.Attribute.Enumeration<['work', 'insight', 'both']> &
+      Schema.Attribute.Required;
+    slug: Schema.Attribute.UID<'name'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    works: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
+  };
+}
+
+export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
+  collectionName: 'testimonials';
+  info: {
+    description: 'Client testimonials and case study quotes';
+    displayName: 'Testimonial';
+    pluralName: 'testimonials';
+    singularName: 'testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    company: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    link: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testimonial.testimonial'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    quote: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    related_case: Schema.Attribute.Relation<'manyToOne', 'api::work.work'>;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiWorkWork extends Struct.CollectionTypeSchema {
+  collectionName: 'works';
+  info: {
+    description: 'Portfolio case studies and work samples';
+    displayName: 'Work';
+    pluralName: 'works';
+    singularName: 'work';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+    seo: {
+      enabled: true;
+    };
+  };
+  attributes: {
+    assets: Schema.Attribute.Component<'media.asset', true>;
+    body: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    budget_band: Schema.Attribute.Enumeration<
+      [
+        'under_50m_idr',
+        'from_50m_200m_idr',
+        'from_200m_1b_idr',
+        'over_1b_idr',
+        'multi_million_usd',
+      ]
+    >;
+    categories: Schema.Attribute.Enumeration<
+      ['ads', 'web', 'influencer', 'seo', 'apps', 'bot', 'mentorship']
+    >;
+    channels: Schema.Attribute.Enumeration<
+      [
+        'google_ads',
+        'meta_ads',
+        'tiktok_ads',
+        'seo',
+        'android',
+        'telegram_bot',
+        'other',
+      ]
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    industry: Schema.Attribute.String;
+    is_enterprise: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::work.work'>;
+    metrics: Schema.Attribute.Component<'metrics.kpi', true>;
+    objective: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    related_cases: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
+    scope: Schema.Attribute.Component<'project.scope-item', true>;
+    slug: Schema.Attribute.UID<'title'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    summary: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    tags: Schema.Attribute.Relation<'manyToMany', 'api::tag.tag'>;
+    timeframe: Schema.Attribute.Component<'project.timeframe', false>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    translation_key: Schema.Attribute.UID & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1020,7 +1311,12 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::insight.insight': ApiInsightInsight;
       'api::page.page': ApiPagePage;
+      'api::rfp-submission.rfp-submission': ApiRfpSubmissionRfpSubmission;
+      'api::tag.tag': ApiTagTag;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::work.work': ApiWorkWork;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

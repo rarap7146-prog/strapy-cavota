@@ -1,0 +1,140 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "singularName": "work",
+    "pluralName": "works",
+    "displayName": "Work",
+    "description": "Portfolio case studies and work samples"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    },
+    "seo": {
+      "enabled": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "translation_key": {
+      "type": "uid",
+      "required": true
+    },
+    "summary": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "categories": {
+      "type": "enumeration",
+      "enum": [
+        "ads",
+        "web",
+        "influencer",
+        "seo",
+        "apps",
+        "bot",
+        "mentorship"
+      ],
+      "multiple": true
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "works"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "text"
+    },
+    "scope": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.scope-item"
+    },
+    "timeframe": {
+      "type": "component",
+      "repeatable": false,
+      "component": "project.timeframe"
+    },
+    "budget_band": {
+      "type": "enumeration",
+      "enum": [
+        "under_50m_idr",
+        "from_50m_200m_idr",
+        "from_200m_1b_idr",
+        "over_1b_idr",
+        "multi_million_usd"
+      ]
+    },
+    "channels": {
+      "type": "enumeration",
+      "enum": [
+        "google_ads",
+        "meta_ads",
+        "tiktok_ads",
+        "seo",
+        "android",
+        "telegram_bot",
+        "other"
+      ],
+      "multiple": true
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metrics.kpi"
+    },
+    "assets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.asset"
+    },
+    "body": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "is_enterprise": {
+      "type": "boolean",
+      "default": false
+    },
+    "related_cases": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::work.work",
+      "mappedBy": "related_cases"
+    }
+  }
+}
