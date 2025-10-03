@@ -1,0 +1,19 @@
+{
+  "name": "strapi-linkgacor",
+  "script": "npm",
+  "args": "run develop",
+  "cwd": "/var/www/linkgacor.one",
+  "instances": 1,
+  "exec_mode": "fork",
+  "watch": false,
+  "max_memory_restart": "1G",
+  "env": {
+    "NODE_ENV": "development",
+    "HOST": "0.0.0.0",
+    "PORT": "1337"
+  },
+  "log_file": "/var/log/pm2/strapi-linkgacor.log",
+  "out_file": "/var/log/pm2/strapi-linkgacor-out.log",
+  "error_file": "/var/log/pm2/strapi-linkgacor-error.log",
+  "time": true
+}

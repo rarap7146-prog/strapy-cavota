@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ui_link_items",
+  "info": {
+    "displayName": "Link Item",
+    "description": "Reusable link component with label and URL"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

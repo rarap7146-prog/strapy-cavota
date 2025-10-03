@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ui_step_items",
+  "info": {
+    "displayName": "Step Item",
+    "description": "Step item with title and description for process flows"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

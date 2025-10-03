@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ui_faq_items",
+  "info": {
+    "displayName": "FAQ Item",
+    "description": "FAQ item with question and rich text answer"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "answer": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

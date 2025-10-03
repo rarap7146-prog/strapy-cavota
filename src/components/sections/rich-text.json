@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_rich_texts",
+  "info": {
+    "displayName": "Rich Text",
+    "description": "Rich text content section"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
