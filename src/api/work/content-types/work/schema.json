@@ -39,8 +39,13 @@
       }
     },
     "translation_key": {
-      "type": "uid",
-      "required": true
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "summary": {
       "type": "text",

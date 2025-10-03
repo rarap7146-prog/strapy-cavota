@@ -951,7 +951,13 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    translation_key: Schema.Attribute.UID & Schema.Attribute.Required;
+    translation_key: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
