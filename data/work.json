@@ -1,0 +1,40 @@
+{
+  "translation_key": "work-enterprise-anon-omnichannel-leadgen",
+  "tags": ["enterprise", "leadgen", "marketing-ops", "automation"],
+  "locales": {
+    "id": {
+      "title": "Enterprise (Anonim) — Omnichannel Lead Gen untuk B2B SaaS",
+      "slug": "enterprise-anonim-omnichannel-leadgen",
+      "summary": "Integrasi demand gen lintas channel dengan scoring & routing real-time ke CRM.",
+      "body": "Program B2B enterprise yang menggabungkan Google Search tematik, LinkedIn ABM, dan Meta retargeting. Lead scoring dihitung dari perilaku multi-touch, disalurkan ke CRM dengan SLA 5 menit. Playbook kreatif dirotasi tiap 10 hari untuk mencegah fatigue dan menjaga kualitas MQL→SQL.",
+      "categories": "ads",
+      "channels": "google_ads",
+      "budget_band": "from_200m_1b_idr",
+      "industry": "saas",
+      "objective": "pipeline",
+      "is_enterprise": true,
+      "metrics": [
+        { "label": "ROAS", "value_before": 1.1, "value_after": 2.0, "unit": "x" },
+        { "label": "CPA", "value_before": 1.00, "value_after": 0.58, "unit": "index" },
+        { "label": "CTR", "value_before": 1.2, "value_after": 2.5, "unit": "%" }
+      ]
+    },
+    "en": {
+      "title": "Enterprise (Anonymized) — Omnichannel Lead Gen for B2B SaaS",
+      "slug": "enterprise-anonymized-omnichannel-leadgen-en",
+      "summary": "Cross-channel demand gen with real-time scoring and CRM routing.",
+      "body": "Enterprise B2B program combining themed Google Search, LinkedIn ABM, and Meta retargeting. Leads are scored from multi-touch behavior and routed to CRM with a 5-minute SLA. Creative playbooks rotate every 10 days to prevent fatigue and preserve MQL→SQL quality.",
+      "categories": "ads",
+      "channels": "google_ads",
+      "budget_band": "from_200m_1b_idr",
+      "industry": "saas",
+      "objective": "pipeline",
+      "is_enterprise": true,
+      "metrics": [
+        { "label": "ROAS", "value_before": 1.1, "value_after": 2.0, "unit": "x" },
+        { "label": "CPA", "value_before": 1.00, "value_after": 0.58, "unit": "index" },
+        { "label": "CTR", "value_before": 1.2, "value_after": 2.5, "unit": "%" }
+      ]
+    }
+  }
+}
