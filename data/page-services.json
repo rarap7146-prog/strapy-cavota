@@ -1,0 +1,293 @@
+{
+  "translation_key": "page-services",
+  "locales": {
+    "id": {
+      "title": "Layanan CAVOTA — Ads, SEO, Web, Apps & Mentoring",
+      "slug": "layanan",
+      "page_type": "services",
+      "seo": {
+        "metaTitle": "Layanan CAVOTA — Ads, SEO, Web, Apps & Mentoring",
+        "metaDescription": "Layanan pertumbuhan terpadu: Ads, Website, Influencer, SEO, Apps, Bot, hingga Mentorship. Dirancang untuk hasil nyata dan skalabilitas brand Anda.",
+        "keywords": "layanan cavota, iklan performa, website development, SEO, influencer marketing, aplikasi, bot automation, mentorship",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/layanan",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Layanan CAVOTA",
+          "description": "Layanan pertumbuhan terpadu untuk brand modern—dari strategi hingga skalasi.",
+          "provider": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id"
+          },
+          "serviceType": [
+            "Performance Ads",
+            "Website Development", 
+            "SEO & Content",
+            "Influencer Marketing",
+            "App Development",
+            "Marketing Automation",
+            "Team Mentorship"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "CAVOTA Agency",
+          "heading": "Layanan untuk Hasil Nyata",
+          "subheading": "Dari strategi hingga eksekusi—kami membangun sistem pertumbuhan yang berkelanjutan untuk brand modern.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Ajukan Pitch",
+              "url": "/id/rfp",
+              "isExternal": false
+            },
+            {
+              "label": "Lihat Portofolio", 
+              "url": "/id/work",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Layanan Kami",
+          "items": [
+            {
+              "title": "Ads Performance",
+              "subtitle": "Performa Iklan",
+              "description": "Pertumbuhan berbasis data di seluruh channel: Google, Meta, TikTok, Programmatic. Guardrails harian, creative rotation, dan kontrol biaya untuk ROAS konsisten.",
+              "url": "/id/layanan/ads-performance",
+              "isExternal": false
+            },
+            {
+              "title": "Website Experience",
+              "subtitle": "Pengalaman Web",
+              "description": "Website super cepat, SEO-ready, dan terukur. Fokus pada UX, kecepatan, dan arsitektur data agar conversion naik.",
+              "url": "/id/layanan/website-experience",
+              "isExternal": false
+            },
+            {
+              "title": "Influencer & KOL",
+              "subtitle": "Kerjasama Kreator",
+              "description": "Aktivasi creator end-to-end—dari pemilihan, kontrak, hingga atribut ROI. Skala tanpa mengorbankan brand-fit.",
+              "url": "/id/layanan/influencer-kol",
+              "isExternal": false
+            },
+            {
+              "title": "SEO & Content",
+              "subtitle": "Konten & Optimasi",
+              "description": "Strategi konten terintegrasi: SEO teknis, content marketing, dan link building. Tampil di halaman 1 dengan traffic yang relevan.",
+              "url": "/id/layanan/seo-content",
+              "isExternal": false
+            },
+            {
+              "title": "Apps & Product",
+              "subtitle": "Aplikasi & Produk",
+              "description": "Pengembangan aplikasi ringan, cepat, dan terukur. Integrasi analitik & eksperimen untuk siklus rilis yang gesit.",
+              "url": "/id/layanan/apps-product",
+              "isExternal": false
+            },
+            {
+              "title": "Automation & Bots",
+              "subtitle": "Otomasi & Bot",
+              "description": "Otomatiskan alur kerja marketing, CRM, dan service dengan bot yang aman & terukur (WA/Telegram/Web).",
+              "url": "/id/layanan/automation-bots",
+              "isExternal": false
+            },
+            {
+              "title": "Mentorship & Enablement",
+              "subtitle": "Pendampingan Tim",
+              "description": "Pendampingan tim in-house: playbook, QA mingguan, dan sistem review agar performa stabil jangka panjang.",
+              "url": "/id/layanan/mentorship-enablement",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Dipercaya brand nasional & regional — Ratusan eksperimen, satu standar: hasil yang dapat diulang."
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "Cara Kami Bekerja",
+          "steps": [
+            {
+              "title": "Audit & Prioritas",
+              "description": "Peta peluang berdasar data, bukan opini."
+            },
+            {
+              "title": "Blueprint & Guardrails",
+              "description": "Rancang taktik + batasan risiko agar efisien dan aman brand."
+            },
+            {
+              "title": "Eksekusi & Eksperimen",
+              "description": "Sprint mingguan, eksperimen terarah, dokumentasi rapi."
+            },
+            {
+              "title": "Scale Up",
+              "description": "Replikasi pemenang lintas channel & market."
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Siap mendorong pertumbuhan berikutnya?",
+          "button": {
+            "label": "Ajukan Pitch",
+            "url": "/id/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    },
+    "en": {
+      "title": "CAVOTA Services — Ads, SEO, Web, Apps & Mentoring",
+      "slug": "services",
+      "page_type": "services",
+      "seo": {
+        "metaTitle": "CAVOTA Services — Ads, SEO, Web, Apps & Mentoring",
+        "metaDescription": "Integrated growth services—from Ads and Website to SEO, Influencer, Apps, Bots, and Mentorship. Built for measurable, scalable outcomes.",
+        "keywords": "cavota services, performance ads, website development, SEO, influencer marketing, app development, bot automation, mentorship",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/services",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "CAVOTA Services",
+          "description": "End-to-end solutions for modern brands—strategy to scale.",
+          "provider": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id"
+          },
+          "serviceType": [
+            "Performance Ads",
+            "Website Development",
+            "SEO & Content", 
+            "Influencer Marketing",
+            "App Development",
+            "Marketing Automation",
+            "Team Mentorship"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "CAVOTA Agency",
+          "heading": "Services Built for Outcomes",
+          "subheading": "From strategy to execution—we ship sustainable growth systems for modern brands.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Start a Pitch",
+              "url": "/en/rfp",
+              "isExternal": false
+            },
+            {
+              "label": "View Work",
+              "url": "/en/work", 
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Our Services",
+          "items": [
+            {
+              "title": "Performance Ads",
+              "subtitle": "Paid Advertising",
+              "description": "Data-driven growth across Google, Meta, TikTok, and Programmatic. Daily guardrails, creative rotation, and cost control for stable ROAS.",
+              "url": "/en/services/performance-ads",
+              "isExternal": false
+            },
+            {
+              "title": "Website Experience",
+              "subtitle": "Web Development",
+              "description": "Lightning-fast, SEO-ready sites with measurable UX. Built for speed, clarity, and conversion.",
+              "url": "/en/services/website-experience",
+              "isExternal": false
+            },
+            {
+              "title": "Influencer & KOL",
+              "subtitle": "Creator Partnership",
+              "description": "End-to-end creator activation—selection, contracting, and ROI attribution. Scale without losing brand-fit.",
+              "url": "/en/services/influencer-kol",
+              "isExternal": false
+            },
+            {
+              "title": "SEO & Content",
+              "subtitle": "Content & Optimization",
+              "description": "Organic acquisition engine: technical SEO, impactful content, and clean internal linking for compound growth.",
+              "url": "/en/services/seo-content",
+              "isExternal": false
+            },
+            {
+              "title": "Apps & Product",
+              "subtitle": "Application Development",
+              "description": "Lightweight, fast, and scalable apps. Analytics-integrated with a tight experimentation loop.",
+              "url": "/en/services/apps-product",
+              "isExternal": false
+            },
+            {
+              "title": "Automation & Bots",
+              "subtitle": "Process Automation",
+              "description": "Automate marketing, CRM, and service workflows with secure, scalable bots (WA/Telegram/Web).",
+              "url": "/en/services/automation-bots",
+              "isExternal": false
+            },
+            {
+              "title": "Mentorship & Enablement",
+              "subtitle": "Team Development",
+              "description": "In-house team enablement: playbooks, weekly QA, and review systems for durable performance.",
+              "url": "/en/services/mentorship-enablement",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Trusted by national & regional brands — Hundreds of experiments, one standard: repeatable outcomes."
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "How We Work",
+          "steps": [
+            {
+              "title": "Audit & Prioritize",
+              "description": "Opportunity map grounded in data."
+            },
+            {
+              "title": "Blueprint & Guardrails",
+              "description": "Tactics + risk boundaries for efficient, brand-safe execution."
+            },
+            {
+              "title": "Execute & Experiment",
+              "description": "Weekly sprints, focused experiments, clean documentation."
+            },
+            {
+              "title": "Scale Up",
+              "description": "Replicate winners across channels and markets."
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Ready to ship your next growth chapter?",
+          "button": {
+            "label": "Start a Pitch",
+            "url": "/en/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "testimonials": [
+    {
+      "documentId": "testimonial-sarah-wijaya",
+      "locales": {
+        "id": {
+          "quote": "CAVOTA tidak hanya mengoptimalkan campaign ads kami, tapi juga mengubah cara kami memahami customer journey. ROI meningkat 340% dalam 3 bulan — hasil yang tidak pernah kami bayangkan sebelumnya.",
+          "name": "Sarah Wijaya",
+          "title": "Marketing Director",
+          "company": "TechStart Indonesia",
+          "link": "https://techstart.id"
+        },
+        "en": {
+          "quote": "CAVOTA didn't just optimize our ad campaigns, but transformed how we understand customer journey. ROI increased 340% in 3 months — results we never imagined before.",
+          "name": "Sarah Wijaya",
+          "title": "Marketing Director",
+          "company": "TechStart Indonesia",
+          "link": "https://techstart.id"
+        }
+      }
+    },
+    {
+      "documentId": "testimonial-michael-chen",
+      "locales": {
+        "id": {
+          "quote": "Website redesign dari CAVOTA bukan sekadar visual upgrade. User experience yang mereka ciptakan meningkatkan conversion rate 180% dan membuat customer lebih lama berinteraksi dengan brand kami.",
+          "name": "Michael Chen",
+          "title": "CEO",
+          "company": "EcoLiving",
+          "link": "https://ecoliving.co.id"
+        },
+        "en": {
+          "quote": "The website redesign from CAVOTA wasn't just a visual upgrade. The user experience they created increased conversion rate by 180% and made customers interact longer with our brand.",
+          "name": "Michael Chen",
+          "title": "CEO",
+          "company": "EcoLiving",
+          "link": "https://ecoliving.co.id"
+        }
+      }
+    },
+    {
+      "documentId": "testimonial-dian-pratiwi",
+      "locales": {
+        "id": {
+          "quote": "Program mentorship CAVOTA mengubah seluruh perspektif saya tentang digital marketing. Dalam 6 bulan, saya berhasil naik jabatan dan memimpin tim marketing yang 3x lebih besar.",
+          "name": "Dian Pratiwi",
+          "title": "Senior Marketing Manager",
+          "company": "BeautyNow",
+          "link": "https://beautynow.id"
+        },
+        "en": {
+          "quote": "CAVOTA's mentorship program completely changed my perspective on digital marketing. In 6 months, I got promoted and now lead a marketing team 3x larger.",
+          "name": "Dian Pratiwi",
+          "title": "Senior Marketing Manager",
+          "company": "BeautyNow",
+          "link": "https://beautynow.id"
+        }
+      }
+    },
+    {
+      "documentId": "testimonial-rizky-firmansyah",
+      "locales": {
+        "id": {
+          "quote": "Strategi SEO CAVOTA membuat website kami mendominasi page 1 Google untuk 15+ keywords utama. Organic traffic naik 450% dan kualitas lead yang masuk jauh lebih qualified.",
+          "name": "Rizky Firmansyah",
+          "title": "Digital Marketing Head",
+          "company": "FinanceMax",
+          "link": "https://financemax.co.id"
+        },
+        "en": {
+          "quote": "CAVOTA's SEO strategy made our website dominate Google page 1 for 15+ main keywords. Organic traffic increased 450% and the quality of incoming leads is much more qualified.",
+          "name": "Rizky Firmansyah",
+          "title": "Digital Marketing Head",
+          "company": "FinanceMax",
+          "link": "https://financemax.co.id"
+        }
+      }
+    },
+    {
+      "documentId": "testimonial-amanda-sari",
+      "locales": {
+        "id": {
+          "quote": "Kolaborasi influencer yang diatur CAVOTA terasa sangat natural dan authentic. Brand awareness kami meningkat 280% dengan engagement rate yang konsisten tinggi di semua platform.",
+          "name": "Amanda Sari",
+          "title": "Brand Manager",
+          "company": "FashionForward",
+          "link": "https://fashionforward.id"
+        },
+        "en": {
+          "quote": "The influencer collaborations arranged by CAVOTA felt very natural and authentic. Our brand awareness increased 280% with consistently high engagement rates across all platforms.",
+          "name": "Amanda Sari",
+          "title": "Brand Manager",
+          "company": "FashionForward",
+          "link": "https://fashionforward.id"
+        }
+      }
+    }
+  ]
+}

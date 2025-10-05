@@ -1,0 +1,55 @@
+{
+  "translation_key": "site-settings-main",
+  "locales": {
+    "id": {
+      "contact_email": "hello@cavota.id",
+      "whatsapp": "+62 812-3456-7890",
+      "whatsapp_url": "https://wa.me/6281234567890",
+      "phone": "+62 21-1234-5678",
+      "address": "Jakarta, Indonesia",
+      "office_hours": "Senin - Jumat, 09:00 - 18:00 WIB",
+      "socials": [
+        {
+          "platform": "LinkedIn",
+          "username": "@cavota-agency", 
+          "url": "https://linkedin.com/company/cavota"
+        },
+        {
+          "platform": "Instagram",
+          "username": "@cavota.id",
+          "url": "https://instagram.com/cavota.id"
+        },
+        {
+          "platform": "Twitter",
+          "username": "@cavota_id",
+          "url": "https://twitter.com/cavota_id"
+        }
+      ]
+    },
+    "en": {
+      "contact_email": "hello@cavota.id",
+      "whatsapp": "+62 812-3456-7890", 
+      "whatsapp_url": "https://wa.me/6281234567890",
+      "phone": "+62 21-1234-5678",
+      "address": "Jakarta, Indonesia",
+      "office_hours": "Monday - Friday, 09:00 - 18:00 WIB",
+      "socials": [
+        {
+          "platform": "LinkedIn",
+          "username": "@cavota-agency",
+          "url": "https://linkedin.com/company/cavota"
+        },
+        {
+          "platform": "Instagram", 
+          "username": "@cavota.id",
+          "url": "https://instagram.com/cavota.id"
+        },
+        {
+          "platform": "Twitter",
+          "username": "@cavota_id",
+          "url": "https://twitter.com/cavota_id"
+        }
+      ]
+    }
+  }
+}

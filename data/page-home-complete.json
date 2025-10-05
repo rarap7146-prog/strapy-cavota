@@ -1,0 +1,149 @@
+{
+  "translation_key": "page-home",
+  "locales": {
+    "id": {
+      "title": "CAVOTA: Agensi Digital Berbasis Performa & Hasil Nyata",
+      "slug": "beranda",
+      "page_type": "home",
+      "seo": {
+        "metaTitle": "CAVOTA — Agensi Digital yang Fokus pada Penjualan",
+        "metaDescription": "Cavota bukan agensi biasa. Kami menggabungkan media buying, desain, dan automasi untuk satu tujuan: mendorong penjualan dan pertumbuhan bisnis nyata Anda.",
+        "keywords": "Cavota, Agensi Digital, Media Buying, Digital Marketing, Marketing Automation, Jakarta",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/beranda",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "DigitalMarketingAgency",
+          "name": "CAVOTA Agency",
+          "url": "https://cavota.id",
+          "logo": "https://cavota.id/logo.png",
+          "description": "Agensi digital berbasis performa yang menggabungkan sains media, desain, dan automasi untuk mendorong hasil bisnis nyata—bukan sekadar impresi.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jakarta",
+            "addressCountry": "ID"
+          },
+          "sameAs": [
+            "https://linkedin.com/company/cavota",
+            "https://instagram.com/cavota"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "CAVOTA Agensi Digital",
+          "heading": "Percuma Kreatif Kalau Nggak Menjual.",
+          "subheading": "Sistem kami: Strategi data, eksekusi presisi, & ahli mentorship. Kami percaya metrik terpenting adalah pertumbuhan bisnis Anda; bukan sekadar impresi kosong.",
+          "style_variant": "default"
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Meningkatkan pangsa pasar melalui kampanye digital terintegrasi."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Memperkuat brand top-of-mind di kategori cat & bahan bangunan."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Menjalankan strategi portofolio brand untuk beragam segmen konsumen."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Mendorong akuisisi pengguna di skala nasional."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Fokus Kami: Hasil."
+        },
+        {
+          "__component": "sections.case-carousel",
+          "title": "Kerja Nyata",
+          "layout": "cards"
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "Sistem Kerja Kami"
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Cukup dengan wacana. Siap bicara angka?"
+        }
+      ]
+    },
+    "en": {
+      "title": "CAVOTA — Full-Service Advertising, Built for Outcomes.",
+      "slug": "home",
+      "page_type": "home",
+      "seo": {
+        "metaTitle": "CAVOTA — Performance-Driven Digital Agency",
+        "metaDescription": "CAVOTA isn't your typical agency. We combine media buying, design, and automation for one purpose: driving sales and real business growth.",
+        "keywords": "CAVOTA, Digital Agency, Media Buying, Digital Marketing, Marketing Automation, Jakarta, Performance Marketing",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/home",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "DigitalMarketingAgency",
+          "name": "CAVOTA Agency",
+          "url": "https://cavota.id",
+          "logo": "https://cavota.id/logo.png",
+          "description": "Performance-driven digital agency combining media science, design, and automation to drive real business results—not just impressions.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jakarta",
+            "addressCountry": "ID"
+          },
+          "sameAs": [
+            "https://linkedin.com/company/cavota",
+            "https://instagram.com/cavota"
+          ]
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "CAVOTA Digital Agency",
+          "heading": "Great Creative Means Nothing If It Doesn't Sell.",
+          "subheading": "Our system: Data strategy, precision execution, & expert mentorship. We believe the most important metric is your business growth; not empty impressions.",
+          "style_variant": "default"
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Increasing market share through integrated digital campaigns."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Strengthening top-of-mind brand in paint & building materials category."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Running portfolio brand strategy for diverse consumer segments."
+        },
+        {
+          "__component": "sections.proof-bar",
+          "note": "Driving user acquisition at national scale."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Our Focus: Results."
+        },
+        {
+          "__component": "sections.case-carousel",
+          "title": "Real Work",
+          "layout": "cards"
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "Our Work System"
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Enough with the talk. Ready to discuss numbers?"
+        }
+      ]
+    }
+  }
+}

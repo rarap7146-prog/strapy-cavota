@@ -21,6 +21,15 @@
         }
       }
     },
+    "subtitle": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "description": {
       "type": "text",
       "required": true,
@@ -29,6 +38,20 @@
           "localized": true
         }
       }
+    },
+    "url": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }

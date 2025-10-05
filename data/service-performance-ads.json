@@ -1,0 +1,277 @@
+{
+  "translation_key": "service-performance-ads",
+  "locales": {
+    "id": {
+      "title": "Iklan Performa — Kampanye Data-Driven oleh CAVOTA",
+      "slug": "layanan-iklan-performa",
+      "page_type": "custom",
+      "seo": {
+        "metaTitle": "Iklan Performa — Kampanye Data-Driven oleh CAVOTA",
+        "metaDescription": "Periklanan full-funnel berbasis data dan kecerdasan kreatif. Bangun sistem iklan yang tumbuh berkelanjutan di Google, Meta, dan TikTok dengan metodologi yang terbukti.",
+        "keywords": "iklan performa, kampanye data-driven, periklanan full-funnel, kecerdasan kreatif, Google Ads, Meta Ads, TikTok Ads",
+        "metaRobots": "index,follow",
+        "canonicalURL": "/layanan/iklan-performa"
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Iklan Performa",
+          "heading": "Dirancang untuk Pertumbuhan yang Berkelanjutan",
+          "subheading": "Lebih dari sekadar media buying — ini adalah arsitektur performa. CAVOTA membangun ekosistem iklan yang tumbuh tanpa kelelahan.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Ajukan Pitch",
+              "url": "/id/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "Kami tidak mengejar klik — kami membangun sistem yang berkembang secara konsisten.\n\nSetiap kampanye Iklan Performa dirancang dengan disiplin data, kecepatan kreatif, dan akuntabilitas lintas funnel.\n\nDari awareness hingga checkout, setiap impresi memiliki tujuan yang terukur."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Apa yang Kami Tawarkan",
+          "items": [
+            {
+              "title": "Strategi Full-Funnel",
+              "subtitle": "End-to-End Strategy",
+              "description": "Satukan reach, consideration, dan conversion di satu kerangka yang bisa diukur.",
+              "url": "/id/strategi-full-funnel",
+              "isExternal": false
+            },
+            {
+              "title": "Daily Guardrails",
+              "subtitle": "Kontrol Harian",
+              "description": "Pacing anggaran, batas frekuensi, dan rotasi kreatif untuk mencegah ad fatigue.",
+              "url": "/id/daily-guardrails",
+              "isExternal": false
+            },
+            {
+              "title": "Orkestrasi Omni-Channel",
+              "subtitle": "Multi-Platform",
+              "description": "Google, Meta, TikTok, Programmatic — satu cerita, banyak layar.",
+              "url": "/id/omni-channel",
+              "isExternal": false
+            },
+            {
+              "title": "Kecerdasan Kreatif",
+              "subtitle": "Creative Intelligence",
+              "description": "Iterasi kreatif berbasis data yang memadukan psikologi dan metrik performa.",
+              "url": "/id/kecerdasan-kreatif",
+              "isExternal": false
+            },
+            {
+              "title": "Atribusi Lintas Platform",
+              "subtitle": "Cross-Platform Attribution",
+              "description": "Tracking akurat dari impresi pertama hingga konversi terakhir di semua touchpoint.",
+              "url": "/id/atribusi-lintas-platform",
+              "isExternal": false
+            },
+            {
+              "title": "Optimisasi Biaya Akuisisi",
+              "subtitle": "CPA Optimization",
+              "description": "Algoritma pacing yang menjaga efisiensi biaya sambil memperluas reach.",
+              "url": "/id/optimisasi-cpa",
+              "isExternal": false
+            },
+            {
+              "title": "Audience Intelligence",
+              "subtitle": "Smart Targeting",
+              "description": "Segmentasi dinamis berdasarkan behavior pattern dan lifecycle stage.",
+              "url": "/id/audience-intelligence",
+              "isExternal": false
+            },
+            {
+              "title": "Campaign Automation",
+              "subtitle": "Automated Scaling",
+              "description": "Rule-based scaling dengan failsafe untuk mencegah budget runaway.",
+              "url": "/id/campaign-automation",
+              "isExternal": false
+            },
+            {
+              "title": "Performance Reporting",
+              "subtitle": "Data Transparency",
+              "description": "Dashboard real-time dengan insight yang bisa dijalankan untuk setiap stakeholder.",
+              "url": "/id/performance-reporting",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "## Hasil yang Terbukti\n\n**ROAS: +72%** rata-rata peningkatan\n\n**CPA: -28%** penurunan dengan optimisasi pacing\n\n**CTR: +45%** kenaikan lewat siklus uji kreatif\n\n**Retensi: +33%** bila dikombinasikan dengan re-engagement CRM"
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "Cara Kami Bekerja",
+          "steps": [
+            {
+              "title": "Audit & Alignment",
+              "description": "Pemetaan peluang dan potensi overlap audiens."
+            },
+            {
+              "title": "Blueprint",
+              "description": "Desain alur kreatif, targeting, dan frekuensi yang terintegrasi."
+            },
+            {
+              "title": "Run & Measure",
+              "description": "Implementasi dengan pacing AI dan atribusi lintas platform."
+            },
+            {
+              "title": "Iterasi & Skalasi",
+              "description": "Insight langsung diterjemahkan ke efisiensi baru."
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "title": "Siap membangun mesin pertumbuhanmu?",
+          "button": {
+            "label": "Ajukan Pitch",
+            "url": "/id/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    },
+    "en": {
+      "title": "Performance Ads — Data-Driven Campaigns by CAVOTA",
+      "slug": "services-performance-ads",
+      "page_type": "custom",
+      "seo": {
+        "metaTitle": "Performance Ads — Data-Driven Campaigns by CAVOTA",
+        "metaDescription": "Full-funnel advertising powered by creative intelligence and data discipline. Build ad systems that scale sustainably across Google, Meta, and TikTok with proven methodologies.",
+        "keywords": "performance ads, data-driven campaigns, full-funnel advertising, creative intelligence, Google Ads, Meta Ads, TikTok Ads",
+        "metaRobots": "index,follow",
+        "canonicalURL": "/services/performance-ads"
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Performance Ads",
+          "heading": "Engineered for Sustainable Growth",
+          "subheading": "Beyond media buying — this is performance architecture. CAVOTA builds ad ecosystems that scale without fatigue.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Start a Pitch",
+              "url": "/en/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "We don't chase clicks — we design systems that compound.\n\nEvery campaign in Performance Ads is built around data discipline, creative velocity, and full-funnel accountability.\n\nFrom awareness to checkout, each impression has a measurable job to do."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "What We Deliver",
+          "items": [
+            {
+              "title": "Full-Funnel Strategy",
+              "subtitle": "End-to-End Strategy",
+              "description": "Unify reach, consideration, and conversion under a single measurable framework.",
+              "url": "/en/full-funnel-strategy",
+              "isExternal": false
+            },
+            {
+              "title": "Daily Guardrails",
+              "subtitle": "Daily Controls",
+              "description": "Budget pacing, frequency caps, and creative rotation to eliminate ad fatigue.",
+              "url": "/en/daily-guardrails",
+              "isExternal": false
+            },
+            {
+              "title": "Omni-Channel Orchestration",
+              "subtitle": "Multi-Platform",
+              "description": "Google, Meta, TikTok, Programmatic — one story told across every screen.",
+              "url": "/en/omni-channel",
+              "isExternal": false
+            },
+            {
+              "title": "Creative Intelligence",
+              "subtitle": "Creative Intelligence",
+              "description": "Data-driven creative iteration that blends psychology with performance metrics.",
+              "url": "/en/creative-intelligence",
+              "isExternal": false
+            },
+            {
+              "title": "Cross-Platform Attribution",
+              "subtitle": "Attribution Tracking",
+              "description": "Accurate tracking from first impression to final conversion across all touchpoints.",
+              "url": "/en/cross-platform-attribution",
+              "isExternal": false
+            },
+            {
+              "title": "Cost Acquisition Optimization",
+              "subtitle": "CPA Optimization",
+              "description": "Pacing algorithms that maintain cost efficiency while expanding reach.",
+              "url": "/en/cpa-optimization",
+              "isExternal": false
+            },
+            {
+              "title": "Audience Intelligence",
+              "subtitle": "Smart Targeting",
+              "description": "Dynamic segmentation based on behavior patterns and lifecycle stages.",
+              "url": "/en/audience-intelligence",
+              "isExternal": false
+            },
+            {
+              "title": "Campaign Automation",
+              "subtitle": "Automated Scaling",
+              "description": "Rule-based scaling with failsafes to prevent budget runaway.",
+              "url": "/en/campaign-automation",
+              "isExternal": false
+            },
+            {
+              "title": "Performance Reporting",
+              "subtitle": "Data Transparency",
+              "description": "Real-time dashboards with actionable insights for every stakeholder.",
+              "url": "/en/performance-reporting",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "## Results that Matter\n\n**ROAS: +72%** average improvement across campaigns\n\n**CPA: -28%** reduction through pacing optimization\n\n**CTR: +45%** uplift with creative testing loops\n\n**Retention: +33%** when combined with CRM re-engagement"
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "How We Execute",
+          "steps": [
+            {
+              "title": "Audit & Align",
+              "description": "Identify leakage points and audience overlaps."
+            },
+            {
+              "title": "Blueprint",
+              "description": "Architect creative, targeting, and frequency in unified flow."
+            },
+            {
+              "title": "Run & Measure",
+              "description": "Deploy with pacing AI and cross-platform attribution."
+            },
+            {
+              "title": "Iterate & Scale",
+              "description": "Fold insights back into creative and spend efficiency."
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "title": "Ready to design your growth engine?",
+          "button": {
+            "label": "Start a Pitch",
+            "url": "/en/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    }
+  }
+}

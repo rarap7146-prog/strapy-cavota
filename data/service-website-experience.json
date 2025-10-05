@@ -1,0 +1,293 @@
+{
+  "translation_key": "service-website-experience",
+  "locales": {
+    "en": {
+      "title": "Website Experience — UX, UI, and Performance Design by CAVOTA",
+      "slug": "services-website-experience",
+      "page_type": "custom",
+      "seo": {
+        "metaTitle": "Website Experience — UX, UI, and Performance Design by CAVOTA",
+        "metaDescription": "CAVOTA builds data-driven websites that merge creativity with conversion. Designed for emotion, optimized for performance.",
+        "keywords": "Website Design, UX Design, UI Design, Website Performance",
+        "metaRobots": "index, follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/services/website-experience",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Website Design and Development",
+          "name": "Website Experience Service",
+          "url": "https://cavota.id/en/services/website-experience",
+          "description": "UX and UI design combined with performance optimization. We create websites that merge brand elegance with conversion architecture using modern technologies like Next.js, Nuxt, and Strapi.",
+          "provider": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+          },
+          "keywords": "Website Design, UX Design, UI Design, Performance Optimization, Next.js, Nuxt, Strapi, Conversion Rate Optimization"
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Website Experience",
+          "heading": "Designed for Flow, Built for Conversion",
+          "subheading": "Not just a website — a living system that communicates brand, drives intent, and evolves with data.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Request a Consultation",
+              "url": "/en/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "CAVOTA designs digital experiences that think, feel, and convert.\n\nEvery page is an ecosystem of storytelling, interaction, and measurable intent.\n\nWe merge brand elegance with performance architecture — so your website becomes your strongest business asset."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "What We Craft",
+          "items": [
+            {
+              "title": "Experience Architecture",
+              "description": "UX and UI designed to align emotion with action."
+            },
+            {
+              "title": "Headless Performance",
+              "description": "Built with modern stacks like Next.js, Nuxt, and Strapi for speed and flexibility."
+            },
+            {
+              "title": "Conversion Psychology",
+              "description": "Behavioral triggers and visual rhythms that guide users effortlessly."
+            },
+            {
+              "title": "SEO & Schema Intelligence",
+              "description": "Clean markup, optimized semantics, and performance scoring above 95."
+            },
+            {
+              "title": "Analytics & Personalization",
+              "description": "Integrated journey mapping, A/B testing, and contextual content delivery."
+            }
+          ]
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "How We Build",
+          "steps": [
+            {
+              "title": "Discovery & Audit",
+              "description": "Identify emotional touchpoints and technical friction."
+            },
+            {
+              "title": "Experience Mapping",
+              "description": "Define the user's narrative flow across key funnels."
+            },
+            {
+              "title": "Prototype & Design",
+              "description": "Build design language that unites aesthetics and performance."
+            },
+            {
+              "title": "Development & QA",
+              "description": "Implement using headless CMS and modern frontend frameworks."
+            },
+            {
+              "title": "Launch & Evolve",
+              "description": "Deploy, measure, and iterate continuously through data."
+            }
+          ]
+        },
+        {
+          "__component": "sections.metrics-grid",
+          "title": "Proven Impact",
+          "subtitle": "Numbers that speak to excellence.",
+          "style_variant": "default",
+          "metrics": [
+            {
+              "label": "Conversion Rate",
+              "value_after": 54,
+              "unit": "%",
+              "delta_auto": true
+            },
+            {
+              "label": "Page Load Speed",
+              "value_after": 1.1,
+              "unit": "s",
+              "delta_auto": false
+            },
+            {
+              "label": "Retention",
+              "value_after": 39,
+              "unit": "%",
+              "delta_auto": true
+            },
+            {
+              "label": "SEO Health Score",
+              "value_after": 98,
+              "unit": "/100",
+              "delta_auto": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Your website shouldn't just exist — it should perform.",
+          "button": {
+            "label": "Let's Build",
+            "url": "/en/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    },
+    "id": {
+      "title": "Pengalaman Website — Desain UX, UI, dan Performa oleh CAVOTA",
+      "slug": "layanan-pengalaman-website",
+      "page_type": "custom",
+      "seo": {
+        "metaTitle": "Pengalaman Website — Desain UX, UI, dan Performa oleh CAVOTA",
+        "metaDescription": "CAVOTA menciptakan website berbasis data yang menyatukan kreativitas dan konversi. Dirancang untuk emosi, dioptimalkan untuk performa.",
+        "keywords": "Desain Website, Desain UX, Desain UI, Performa Website",
+        "metaRobots": "index, follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/layanan/pengalaman-website",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Website Design and Development",
+          "name": "Layanan Pengalaman Website",
+          "url": "https://cavota.id/layanan/pengalaman-website",
+          "description": "Desain UX dan UI yang dikombinasikan dengan optimisasi performa. Kami menciptakan website yang menyatukan keanggunan brand dengan arsitektur konversi menggunakan teknologi modern seperti Next.js, Nuxt, dan Strapi.",
+          "provider": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+          },
+          "keywords": "Desain Website, Desain UX, Desain UI, Optimisasi Performa, Next.js, Nuxt, Strapi, Optimisasi Tingkat Konversi"
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Pengalaman Website",
+          "heading": "Dirancang untuk Alur, Dibangun untuk Konversi",
+          "subheading": "Bukan sekadar situs web — melainkan sistem hidup yang menyampaikan makna, mendorong niat, dan berevolusi lewat data.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Konsultasi Sekarang",
+              "url": "/id/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "CAVOTA menciptakan pengalaman digital yang berpikir, berinteraksi, dan menghasilkan.\n\nSetiap halaman kami rancang sebagai perpaduan antara cerita, emosi, dan hasil yang terukur.\n\nKami menyatukan keanggunan brand dengan arsitektur performa — menjadikan website sebagai aset bisnis paling kuat Anda."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Apa yang Kami Bangun",
+          "items": [
+            {
+              "title": "Arsitektur Pengalaman",
+              "description": "UX dan UI yang mengarahkan emosi menuju aksi nyata."
+            },
+            {
+              "title": "Performa Headless",
+              "description": "Dibangun dengan teknologi modern seperti Next.js, Nuxt, dan Strapi untuk kecepatan dan fleksibilitas."
+            },
+            {
+              "title": "Psikologi Konversi",
+              "description": "Pemicu perilaku dan ritme visual yang mengarahkan pengguna secara alami."
+            },
+            {
+              "title": "Kecerdasan SEO & Schema",
+              "description": "Struktur markup bersih, semantik optimal, dan skor performa di atas 95."
+            },
+            {
+              "title": "Analitik & Personalisasi",
+              "description": "Pemetaan perjalanan pengguna, uji A/B, dan penyajian konten kontekstual."
+            }
+          ]
+        },
+        {
+          "__component": "sections.playbook",
+          "title": "Cara Kami Membangun",
+          "steps": [
+            {
+              "title": "Discovery & Audit",
+              "description": "Mengidentifikasi momen emosional dan hambatan teknis."
+            },
+            {
+              "title": "Experience Mapping",
+              "description": "Menyusun alur naratif pengguna di setiap funnel utama."
+            },
+            {
+              "title": "Prototipe & Desain",
+              "description": "Membangun bahasa visual yang seimbang antara estetika dan performa."
+            },
+            {
+              "title": "Development & QA",
+              "description": "Implementasi dengan CMS headless dan framework modern."
+            },
+            {
+              "title": "Peluncuran & Evolusi",
+              "description": "Menjalankan, mengukur, dan menyempurnakan secara berkelanjutan."
+            }
+          ]
+        },
+        {
+          "__component": "sections.metrics-grid",
+          "title": "Dampak yang Terbukti",
+          "subtitle": "Angka yang berbicara tentang keunggulan.",
+          "style_variant": "default",
+          "metrics": [
+            {
+              "label": "Tingkat Konversi",
+              "value_after": 54,
+              "unit": "%",
+              "delta_auto": true
+            },
+            {
+              "label": "Kecepatan Muat Halaman",
+              "value_after": 1.1,
+              "unit": "detik",
+              "delta_auto": false
+            },
+            {
+              "label": "Retensi Pengguna",
+              "value_after": 39,
+              "unit": "%",
+              "delta_auto": true
+            },
+            {
+              "label": "Skor Kesehatan SEO",
+              "value_after": 98,
+              "unit": "/100",
+              "delta_auto": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Website Anda tidak hanya harus hadir — tapi juga harus berfungsi.",
+          "button": {
+            "label": "Bangun Sekarang",
+            "url": "/id/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    }
+  }
+}

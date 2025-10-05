@@ -1,0 +1,165 @@
+{
+  "translation_key": "page-about",
+  "locales": {
+    "id": {
+      "title": "Tentang CAVOTA — Kami Membangun Masa Depan Digital",
+      "slug": "tentang",
+      "page_type": "about",
+      "seo": {
+        "metaTitle": "Tentang CAVOTA — Agensi Digital Masa Depan",
+        "metaDescription": "Kami bukan sekadar agensi — kami adalah mitra yang mendorong pertumbuhan bisnis lewat strategi, desain, dan teknologi yang berdampak.",
+        "keywords": "tentang cavota, agensi digital, tim kreatif, strategi digital, desain teknologi, jakarta",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/tentang",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Tentang CAVOTA",
+          "description": "Kami membangun masa depan digital bersama klien melalui strategi, desain, dan teknologi yang berdampak.",
+          "mainEntity": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id",
+            "description": "Agensi digital yang memadukan wawasan manusia dengan kecerdasan buatan untuk membangun ekosistem digital yang berdampak."
+          }
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Tentang Kami",
+          "heading": "Kami Membangun Masa Depan Digital, Bersama.",
+          "subheading": "Kami bukan sekadar agensi — kami adalah mitra yang mendorong pertumbuhan bisnis lewat strategi, desain, dan teknologi.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Temukan Karya Kami",
+              "url": "/id/work",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Di CAVOTA, Kami Percaya pada Kekuatan Desain & Teknologi\n\nKami memadukan wawasan manusia dengan kecerdasan buatan untuk membangun ekosistem digital yang berdampak. Dari perencanaan strategi hingga eksekusi kreatif, kami membantu brand membangun hubungan yang relevan dan berkelanjutan dengan audiens mereka.\n\nSetiap proyek bukan sekadar kampanye — tapi cerita yang hidup, dibangun dengan presisi dan emosi."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Budaya Kerja Kami",
+          "items": [
+            {
+              "title": "01. Empati Lebih Dulu",
+              "description": "Kami memahami bahwa setiap bisnis adalah manusia — kami mendengarkan sebelum berbicara."
+            },
+            {
+              "title": "02. Kreativitas dengan Tujuan", 
+              "description": "Kami menciptakan sesuatu yang indah, tapi selalu dengan arah dan makna yang jelas."
+            },
+            {
+              "title": "03. Kecepatan, Bukan Terburu-buru",
+              "description": "Kami bergerak cepat tanpa kehilangan kualitas."
+            },
+            {
+              "title": "04. Keberanian Mengubah",
+              "description": "Kami tidak takut membongkar ulang hal yang sudah \"bekerja\" jika ada cara yang lebih baik."
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Tim Kepemimpinan Kami\n\nDipimpin oleh kreator, strategis, dan teknolog yang percaya bahwa masa depan merek dibangun dengan keberanian dan keaslian.\n\nTim leadership kami terdiri dari para ahli yang berpengalaman dalam membangun brand dan mengeksekusi strategi digital yang menghasilkan dampak nyata."
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Siap mengubah visi Anda menjadi realitas digital?",
+          "button": {
+            "label": "Ajukan Proyek",
+            "url": "/id/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    },
+    "en": {
+      "title": "About CAVOTA — We Build the Digital Future",
+      "slug": "about",
+      "page_type": "about",
+      "seo": {
+        "metaTitle": "About CAVOTA — Digital Agency of the Future",
+        "metaDescription": "We're more than an agency — we're your growth partner, fusing strategy, design, and technology to create meaningful impact.",
+        "keywords": "about cavota, digital agency, creative team, digital strategy, design technology, jakarta",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/about",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About CAVOTA",
+          "description": "We build the digital future together with clients through impactful strategy, design, and technology.",
+          "mainEntity": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id",
+            "description": "Digital agency that combines human insight with artificial intelligence to build meaningful digital ecosystems."
+          }
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "About Us",
+          "heading": "We Build the Digital Future, Together.",
+          "subheading": "We're more than an agency — we're your growth partner, fusing strategy, design, and technology.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Explore Our Work",
+              "url": "/en/work",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# At CAVOTA, We Believe in the Power of Design and Technology\n\nWe combine human insight with artificial intelligence to build meaningful digital ecosystems. From strategic planning to creative execution, we help brands build long-term relationships with their audiences.\n\nEvery project is more than a campaign — it's a living story, crafted with precision and emotion."
+        },
+        {
+          "__component": "sections.services-grid",
+          "title": "Our Culture",
+          "items": [
+            {
+              "title": "01. Empathy First",
+              "description": "We see every business as human — we listen before we speak."
+            },
+            {
+              "title": "02. Creativity with Purpose",
+              "description": "We design beauty with intention and clarity."
+            },
+            {
+              "title": "03. Speed, Not Haste",
+              "description": "We move fast, but never at the cost of quality."
+            },
+            {
+              "title": "04. Courage to Redefine",
+              "description": "We challenge what works to find what's better."
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Our Leadership Team\n\nLed by creators, strategists, and technologists who believe the future of brands is built on authenticity and courage.\n\nOur leadership team consists of experts experienced in building brands and executing digital strategies that create real impact."
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Ready to turn your vision into digital reality?",
+          "button": {
+            "label": "Start a Project",
+            "url": "/en/rfp",
+            "isExternal": false
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_sections_metrics_grids",
+  "info": {
+    "displayName": "Metrics Grid",
+    "description": "Grid of performance metrics for showcasing results"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "metrics.kpi"
+    },
+    "style_variant": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "compact",
+        "highlighted"
+      ],
+      "default": "default"
+    }
+  }
+}

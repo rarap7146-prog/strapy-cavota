@@ -7,8 +7,8 @@ export default (config: UserConfig) => {
       host: '0.0.0.0',
       port: 1337,
       allowedHosts: [
-        'linkgacor.one',
-        'www.linkgacor.one',
+        'cavota.id',
+        'www.cavota.id',
         'localhost',
         '127.0.0.1'
       ]

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_testimonial_carousels",
+  "info": {
+    "displayName": "Testimonial Carousel",
+    "description": "Testimonial carousel with title and layout options"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["cards", "highlight", "compact"],
+      "default": "cards"
+    },
+    "max_items": {
+      "type": "integer",
+      "default": 6,
+      "min": 3,
+      "max": 12
+    }
+  }
+}

@@ -95,7 +95,7 @@ You can include these optional fields in each locale:
 Make sure these are set in your `.env` file:
 
 ```bash
-STRAPI_URL=https://linkgacor.one
+STRAPI_URL=https://cavota.id
 STRAPI_TOKEN=your_full_access_token_here
 ```
 
@@ -106,16 +106,16 @@ After running the script, verify the results:
 1. **Check both locales exist:**
    ```bash
    curl -H "Authorization: Bearer $STRAPI_TOKEN" \
-     "https://linkgacor.one/api/works?filters[translation_key][\$eq]=your-translation-key&locale=id"
+     "https://cavota.id/api/works?filters[translation_key][\$eq]=your-translation-key&locale=id"
    
    curl -H "Authorization: Bearer $STRAPI_TOKEN" \
-     "https://linkgacor.one/api/works?filters[translation_key][\$eq]=your-translation-key&locale=en"
+     "https://cavota.id/api/works?filters[translation_key][\$eq]=your-translation-key&locale=en"
    ```
 
 2. **Check localization linking:**
    ```bash
    curl -H "Authorization: Bearer $STRAPI_TOKEN" \
-     "https://linkgacor.one/api/works/DOCUMENT_ID?populate=localizations"
+     "https://cavota.id/api/works/DOCUMENT_ID?populate=localizations"
    ```
 
 3. **Admin UI**: In Strapi admin, the work collection should show one row with "Available in: English (en), Indonesian (id)"

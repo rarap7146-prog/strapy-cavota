@@ -1,0 +1,32 @@
+{
+  "_comment": "Page Template - Basic structure that works with Strapi v5",
+  "translation_key": "page-template",
+  "locales": {
+    "id": {
+      "title": "Template Indonesian",
+      "slug": "template-id",
+      "page_type": "home",
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Indonesian eyebrow",
+          "heading": "Indonesian heading", 
+          "subheading": "Indonesian subheading"
+        }
+      ]
+    },
+    "en": {
+      "title": "Template English",
+      "slug": "template-en",
+      "page_type": "home", 
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "English eyebrow",
+          "heading": "English heading",
+          "subheading": "English subheading"
+        }
+      ]
+    }
+  }
+}

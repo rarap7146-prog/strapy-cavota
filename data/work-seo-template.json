@@ -1,0 +1,41 @@
+{
+  "translation_key": "work-example",
+  "locales": {
+    "id": {
+      "title": "Contoh Proyek - Case Study CAVOTA",
+      "slug": "contoh-proyek",
+      "summary": "Deskripsi singkat tentang proyek ini dan hasil yang dicapai.",
+      "categories": "web",
+      "industry": "E-commerce",
+      "objective": "Meningkatkan konversi dan ROI melalui strategi digital yang terintegrasi.",
+      "budget_band": "from_50m_200m_idr",
+      "seo": {
+        "metaTitle": "Contoh Proyek - Case Study Sukses CAVOTA Agency",
+        "metaDescription": "Pelajari bagaimana CAVOTA Agency membantu klien mencapai peningkatan konversi 300% melalui strategi digital yang terintegrasi.",
+        "keywords": "case study, digital marketing, e-commerce, cavota agency, ROI improvement",
+        "metaRobots": "index,follow",
+        "structuredData": {},
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/work/contoh-proyek"
+      }
+    },
+    "en": {
+      "title": "Example Project - CAVOTA Case Study", 
+      "slug": "example-project",
+      "summary": "Brief description of this project and the results achieved.",
+      "categories": "web",
+      "industry": "E-commerce",
+      "objective": "Increase conversion and ROI through integrated digital strategy.",
+      "budget_band": "from_50m_200m_idr",
+      "seo": {
+        "metaTitle": "Example Project - CAVOTA Agency Success Case Study",
+        "metaDescription": "Learn how CAVOTA Agency helped client achieve 300% conversion increase through integrated digital strategy.",
+        "keywords": "case study, digital marketing, e-commerce, cavota agency, ROI improvement",
+        "metaRobots": "index,follow",
+        "structuredData": {},
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/work/example-project"
+      }
+    }
+  }
+}

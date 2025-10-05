@@ -1,0 +1,131 @@
+{
+  "translation_key": "page-contact",
+  "locales": {
+    "id": {
+      "title": "Hubungi CAVOTA — Mari Membangun Masa Depan Digital",
+      "slug": "kontak",
+      "page_type": "contact",
+      "seo": {
+        "metaTitle": "Hubungi CAVOTA — Konsultasi Digital Gratis",
+        "metaDescription": "Mari membangun masa depan digital bersama. Hubungi CAVOTA untuk konsultasi strategi digital, kolaborasi, atau proyek yang menantang status quo.",
+        "keywords": "hubungi cavota, konsultasi digital, kontak agensi digital, jakarta, strategi digital, kolaborasi",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/kontak",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Hubungi CAVOTA",
+          "description": "Halaman kontak untuk konsultasi dan kolaborasi digital dengan CAVOTA Agency.",
+          "mainEntity": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "areaServed": "ID",
+              "availableLanguage": ["Indonesian", "English"]
+            }
+          }
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Hubungi Kami",
+          "heading": "Mari membangun masa depan digital bersama.",
+          "subheading": "Kami senang mendengar ide baru, peluang kolaborasi, atau proyek berani yang menantang status quo.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Ajukan Pitch",
+              "url": "/id/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Informasi Kontak\n\nTim kami siap membantu Anda membangun strategi digital yang menghasilkan dampak nyata. Hubungi kami melalui channel yang paling nyaman untuk Anda.\n\n**Email**: [hello@cavota.id](mailto:hello@cavota.id)\n\n**WhatsApp**: [+62 812-3456-7890](https://wa.me/6281234567890)\n\n**LinkedIn**: [@cavota-agency](https://linkedin.com/company/cavota)\n\n**Instagram**: [@cavota.id](https://instagram.com/cavota.id)\n\n---\n\n*Informasi kontak ini dapat diperbarui secara otomatis melalui Site Settings.*"
+        },
+        {
+          "__component": "sections.rich-text", 
+          "content": "# Formulir Inquiry\n\n*Formulir ini menggunakan Global Strings untuk label dan pesan, sehingga teks dapat diperbarui secara terpusat.*\n\n**Label yang digunakan:**\n- `name_label`: Nama\n- `email_label`: Email  \n- `budget_label`: Kisaran Anggaran\n- `submit_label`: Kirim\n- `success_msg`: Terima kasih! Kami akan membalas ≤1 hari kerja.\n- `error_msg`: Gagal mengirim. Coba lagi.\n\n*Formulir aktual akan di-render oleh frontend dengan mengambil data dari Global Strings API.*"
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Ingin berdiskusi langsung?",
+          "button": {
+            "label": "Jadwalkan Konsultasi",
+            "url": "/id/meeting",
+            "isExternal": false
+          }
+        }
+      ]
+    },
+    "en": {
+      "title": "Contact CAVOTA — Let's Build the Digital Future",
+      "slug": "contact",
+      "page_type": "contact",
+      "seo": {
+        "metaTitle": "Contact CAVOTA — Free Digital Consultation",
+        "metaDescription": "Let's build the digital future together. Contact CAVOTA for digital strategy consultation, collaboration, or projects that challenge the status quo.",
+        "keywords": "contact cavota, digital consultation, digital agency contact, jakarta, digital strategy, collaboration",
+        "metaRobots": "index,follow",
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/contact",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact CAVOTA",
+          "description": "Contact page for digital consultation and collaboration with CAVOTA Agency.",
+          "mainEntity": {
+            "@type": "DigitalMarketingAgency",
+            "name": "CAVOTA Agency",
+            "url": "https://cavota.id",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "areaServed": "ID",
+              "availableLanguage": ["Indonesian", "English"]
+            }
+          }
+        }
+      },
+      "sections": [
+        {
+          "__component": "sections.hero",
+          "eyebrow": "Contact Us",
+          "heading": "Let's build the digital future together.",
+          "subheading": "We'd love to hear bold ideas, potential collaborations, or ambitious projects that challenge the norm.",
+          "style_variant": "default",
+          "buttons": [
+            {
+              "label": "Start a Pitch",
+              "url": "/en/rfp",
+              "isExternal": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Contact Information\n\nOur team is ready to help you build digital strategies that create real impact. Reach out through the channel that's most convenient for you.\n\n**Email**: [hello@cavota.id](mailto:hello@cavota.id)\n\n**WhatsApp**: [+62 812-3456-7890](https://wa.me/6281234567890)\n\n**LinkedIn**: [@cavota-agency](https://linkedin.com/company/cavota)\n\n**Instagram**: [@cavota.id](https://instagram.com/cavota.id)\n\n---\n\n*This contact information can be automatically updated through Site Settings.*"
+        },
+        {
+          "__component": "sections.rich-text",
+          "content": "# Inquiry Form\n\n*This form uses Global Strings for labels and messages, allowing centralized text management.*\n\n**Labels used:**\n- `name_label`: Name\n- `email_label`: Email\n- `budget_label`: Budget Range\n- `submit_label`: Submit\n- `success_msg`: Thanks! We'll reply within 1 business day.\n- `error_msg`: Submission failed. Please try again.\n\n*The actual form will be rendered by the frontend by fetching data from the Global Strings API.*"
+        },
+        {
+          "__component": "sections.cta-strip",
+          "text": "Prefer to talk directly?",
+          "button": {
+            "label": "Schedule a Call",
+            "url": "/en/meeting",
+            "isExternal": false
+          }
+        }
+      ]
+    }
+  }
+}

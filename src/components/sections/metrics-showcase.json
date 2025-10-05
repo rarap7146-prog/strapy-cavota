@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_metrics_showcases",
+  "info": {
+    "displayName": "Metrics Showcase",
+    "description": "Display key performance metrics and results"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.metric-item"
+    }
+  }
+}

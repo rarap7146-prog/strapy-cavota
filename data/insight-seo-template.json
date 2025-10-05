@@ -1,0 +1,65 @@
+{
+  "translation_key": "insight-example",
+  "locales": {
+    "id": {
+      "title": "5 Strategi Digital Marketing Terbaru 2025",
+      "slug": "strategi-digital-marketing-2025",
+      "summary": "Panduan komprehensif tentang tren digital marketing terkini dan cara mengimplementasikannya untuk bisnis Anda.",
+      "reading_time": 8,
+      "body": "# 5 Strategi Digital Marketing Terbaru 2025\n\nDunia digital marketing terus berkembang dengan pesat. Artikel ini membahas strategi-strategi terkini yang dapat membantu bisnis Anda berkembang di tahun 2025.\n\n## 1. AI-Powered Personalization\n\nPersonalisasi berbasis AI menjadi kunci untuk meningkatkan engagement dan konversi.\n\n## 2. Voice Search Optimization\n\nOptimasi untuk pencarian suara semakin penting dengan popularitas smart speakers.\n\n## 3. Interactive Content Strategy\n\nKonten interaktif seperti polls, quizzes, dan AR experiences meningkatkan engagement.\n\n## 4. Sustainability Marketing\n\nMarketing yang berfokus pada keberlanjutan resonan dengan nilai konsumen modern.\n\n## 5. Community-Driven Growth\n\nMembangun komunitas yang kuat di sekitar brand untuk pertumbuhan organik.\n\n---\n\nIngin mengimplementasikan strategi ini untuk bisnis Anda? Hubungi CAVOTA Agency untuk konsultasi gratis.",
+      "seo": {
+        "metaTitle": "5 Strategi Digital Marketing 2025 | CAVOTA Insights",
+        "metaDescription": "Pelajari 5 strategi digital marketing terdepan untuk 2025: AI personalization, voice search, interactive content, dan sustainability marketing.",
+        "keywords": "digital marketing 2025, strategi marketing, AI personalization, voice search, sustainability marketing, CAVOTA insights",
+        "metaRobots": "index,follow",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "5 Strategi Digital Marketing Terbaru 2025",
+          "description": "Panduan komprehensif tentang tren digital marketing terkini dan cara mengimplementasikannya untuk bisnis Anda.",
+          "author": {
+            "@type": "Organization",
+            "name": "CAVOTA Agency"
+          },
+          "publisher": {
+            "@type": "Organization", 
+            "name": "CAVOTA Agency"
+          },
+          "datePublished": "2025-10-05"
+        },
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/insights/strategi-digital-marketing-2025"
+      }
+    },
+    "en": {
+      "title": "5 Latest Digital Marketing Strategies for 2025",
+      "slug": "digital-marketing-strategies-2025", 
+      "summary": "Comprehensive guide on the latest digital marketing trends and how to implement them for your business.",
+      "reading_time": 8,
+      "body": "# 5 Latest Digital Marketing Strategies for 2025\n\nThe digital marketing world continues to evolve rapidly. This article discusses the latest strategies that can help your business thrive in 2025.\n\n## 1. AI-Powered Personalization\n\nAI-based personalization becomes key to improving engagement and conversion.\n\n## 2. Voice Search Optimization\n\nOptimization for voice search becomes increasingly important with smart speaker popularity.\n\n## 3. Interactive Content Strategy\n\nInteractive content like polls, quizzes, and AR experiences increase engagement.\n\n## 4. Sustainability Marketing\n\nMarketing focused on sustainability resonates with modern consumer values.\n\n## 5. Community-Driven Growth\n\nBuilding strong communities around brands for organic growth.\n\n---\n\nWant to implement these strategies for your business? Contact CAVOTA Agency for a free consultation.",
+      "seo": {
+        "metaTitle": "5 Digital Marketing Strategies 2025 | CAVOTA Insights",
+        "metaDescription": "Learn 5 cutting-edge digital marketing strategies for 2025: AI personalization, voice search, interactive content, and sustainability marketing.",
+        "keywords": "digital marketing 2025, marketing strategies, AI personalization, voice search, sustainability marketing, CAVOTA insights",
+        "metaRobots": "index,follow",
+        "structuredData": {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "5 Latest Digital Marketing Strategies for 2025",
+          "description": "Comprehensive guide on the latest digital marketing trends and how to implement them for your business.",
+          "author": {
+            "@type": "Organization",
+            "name": "CAVOTA Agency"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "CAVOTA Agency"
+          },
+          "datePublished": "2025-10-05"
+        },
+        "metaViewport": "width=device-width, initial-scale=1",
+        "canonicalURL": "/insights/digital-marketing-strategies-2025"
+      }
+    }
+  }
+}

@@ -597,6 +597,12 @@ export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
         number
       >;
     related_cases: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Schema.Attribute.UID<'title'> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -666,12 +672,21 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.proof-bar',
         'sections.services-grid',
         'sections.case-carousel',
+        'sections.testimonial-carousel',
+        'sections.dynamic-content',
         'sections.playbook',
         'sections.cta-strip',
         'sections.rich-text',
         'sections.faq',
+        'sections.metrics-grid',
       ]
     > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -929,6 +944,12 @@ export interface ApiWorkWork extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     related_cases: Schema.Attribute.Relation<'manyToMany', 'api::work.work'>;
     scope: Schema.Attribute.Component<'project.scope-item', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     slug: Schema.Attribute.UID<'title'> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

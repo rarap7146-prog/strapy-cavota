@@ -2,7 +2,7 @@
   "name": "strapi-linkgacor",
   "script": "npm",
   "args": "run develop",
-  "cwd": "/var/www/linkgacor.one",
+  "cwd": "/var/www/cavota.id",
   "instances": 1,
   "exec_mode": "fork",
   "watch": false,

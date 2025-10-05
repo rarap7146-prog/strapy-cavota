@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_sections_dynamic_contents",
+  "info": {
+    "displayName": "Dynamic Content",
+    "description": "Section that displays dynamic content from global strings and site settings"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "template": {
+      "type": "enumeration",
+      "enum": [
+        "contact_info",
+        "form_section", 
+        "company_info",
+        "custom"
+      ],
+      "default": "custom",
+      "required": true
+    },
+    "content_template": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "show_contact_email": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_whatsapp": {
+      "type": "boolean", 
+      "default": false
+    },
+    "show_socials": {
+      "type": "boolean",
+      "default": false
+    },
+    "custom_fields": {
+      "type": "json",
+      "description": "JSON object specifying which global string fields to include"
+    }
+  }
+}

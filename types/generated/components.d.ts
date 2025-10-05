@@ -59,6 +59,24 @@ export interface ProjectTimeframe extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsCapabilitiesGrid extends Struct.ComponentSchema {
+  collectionName: 'components_sections_capabilities_grids';
+  info: {
+    description: 'Grid of capabilities or features with detailed descriptions';
+    displayName: 'Capabilities Grid';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'ui.feature-item', true>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
 export interface SectionsCaseCarousel extends Struct.ComponentSchema {
   collectionName: 'components_sections_case_carousels';
   info: {
@@ -88,6 +106,38 @@ export interface SectionsCtaStrip extends Struct.ComponentSchema {
     button: Schema.Attribute.Component<'ui.link-item', false>;
     text: Schema.Attribute.String &
       Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
+export interface SectionsDynamicContent extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dynamic_contents';
+  info: {
+    description: 'Section that displays dynamic content from global strings and site settings';
+    displayName: 'Dynamic Content';
+  };
+  attributes: {
+    content_template: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    custom_fields: Schema.Attribute.JSON;
+    show_contact_email: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    show_socials: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    show_whatsapp: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    template: Schema.Attribute.Enumeration<
+      ['contact_info', 'form_section', 'company_info', 'custom']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'custom'>;
+    title: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -141,6 +191,52 @@ export interface SectionsHero extends Struct.ComponentSchema {
     > &
       Schema.Attribute.DefaultTo<'default'>;
     subheading: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
+export interface SectionsMetricsGrid extends Struct.ComponentSchema {
+  collectionName: 'components_sections_metrics_grids';
+  info: {
+    description: 'Grid of performance metrics for showcasing results';
+    displayName: 'Metrics Grid';
+  };
+  attributes: {
+    metrics: Schema.Attribute.Component<'metrics.kpi', true>;
+    style_variant: Schema.Attribute.Enumeration<
+      ['default', 'compact', 'highlighted']
+    > &
+      Schema.Attribute.DefaultTo<'default'>;
+    subtitle: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
+export interface SectionsMetricsShowcase extends Struct.ComponentSchema {
+  collectionName: 'components_sections_metrics_showcases';
+  info: {
+    description: 'Display key performance metrics and results';
+    displayName: 'Metrics Showcase';
+  };
+  attributes: {
+    metrics: Schema.Attribute.Component<'ui.metric-item', true>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -209,6 +305,40 @@ export interface SectionsServicesGrid extends Struct.ComponentSchema {
   };
   attributes: {
     items: Schema.Attribute.Component<'ui.feature-item', true>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
+export interface SectionsTestimonialCarousel extends Struct.ComponentSchema {
+  collectionName: 'components_sections_testimonial_carousels';
+  info: {
+    description: 'Testimonial carousel with title and layout options';
+    displayName: 'Testimonial Carousel';
+  };
+  attributes: {
+    layout: Schema.Attribute.Enumeration<['cards', 'highlight', 'compact']> &
+      Schema.Attribute.DefaultTo<'cards'>;
+    max_items: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 12;
+          min: 3;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<6>;
+    subtitle: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -309,8 +439,21 @@ export interface UiFeatureItem extends Struct.ComponentSchema {
         };
       }>;
     icon: Schema.Attribute.Media<'images'>;
+    isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    subtitle: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    url: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -335,6 +478,36 @@ export interface UiLinkItem extends Struct.ComponentSchema {
         };
       }>;
     url: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface UiMetricItem extends Struct.ComponentSchema {
+  collectionName: 'components_ui_metric_items';
+  info: {
+    description: 'Individual metric display item';
+    displayName: 'Metric Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    label: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    value: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
   };
 }
 
@@ -369,19 +542,25 @@ declare module '@strapi/strapi' {
       'metrics.kpi': MetricsKpi;
       'project.scope-item': ProjectScopeItem;
       'project.timeframe': ProjectTimeframe;
+      'sections.capabilities-grid': SectionsCapabilitiesGrid;
       'sections.case-carousel': SectionsCaseCarousel;
       'sections.cta-strip': SectionsCtaStrip;
+      'sections.dynamic-content': SectionsDynamicContent;
       'sections.faq': SectionsFaq;
       'sections.hero': SectionsHero;
+      'sections.metrics-grid': SectionsMetricsGrid;
+      'sections.metrics-showcase': SectionsMetricsShowcase;
       'sections.playbook': SectionsPlaybook;
       'sections.proof-bar': SectionsProofBar;
       'sections.rich-text': SectionsRichText;
       'sections.services-grid': SectionsServicesGrid;
+      'sections.testimonial-carousel': SectionsTestimonialCarousel;
       'shared.open-graph': SharedOpenGraph;
       'shared.seo': SharedSeo;
       'ui.faq-item': UiFaqItem;
       'ui.feature-item': UiFeatureItem;
       'ui.link-item': UiLinkItem;
+      'ui.metric-item': UiMetricItem;
       'ui.step-item': UiStepItem;
     }
   }

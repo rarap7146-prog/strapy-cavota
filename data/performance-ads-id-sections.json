@@ -1,0 +1,93 @@
+{
+  "data": {
+    "sections": [
+      {
+        "__component": "sections.hero",
+        "eyebrow": "Iklan Performa",
+        "heading": "Dirancang untuk Pertumbuhan yang Berkelanjutan",
+        "subheading": "Lebih dari sekadar media buying — ini adalah arsitektur performa. CAVOTA membangun ekosistem iklan yang tumbuh tanpa kelelahan.",
+        "style_variant": "default",
+        "buttons": [
+          {
+            "label": "Ajukan Pitch",
+            "url": "/id/rfp",
+            "isExternal": false
+          }
+        ]
+      },
+      {
+        "__component": "sections.rich-text",
+        "content": "Kami tidak mengejar klik — kami membangun sistem yang berkembang secara konsisten.\n\nSetiap kampanye Iklan Performa dirancang dengan disiplin data, kecepatan kreatif, dan akuntabilitas lintas funnel.\n\nDari awareness hingga checkout, setiap impresi memiliki tujuan yang terukur."
+      },
+      {
+        "__component": "sections.services-grid",
+        "title": "Apa yang Kami Tawarkan",
+        "items": [
+          {
+            "title": "Strategi Full-Funnel",
+            "subtitle": "End-to-End Strategy",
+            "description": "Satukan reach, consideration, dan conversion di satu kerangka yang bisa diukur.",
+            "url": "/id/strategi-full-funnel",
+            "isExternal": false
+          },
+          {
+            "title": "Daily Guardrails",
+            "subtitle": "Kontrol Harian",
+            "description": "Pacing anggaran, batas frekuensi, dan rotasi kreatif untuk mencegah ad fatigue.",
+            "url": "/id/daily-guardrails",
+            "isExternal": false
+          },
+          {
+            "title": "Orkestrasi Omni-Channel",
+            "subtitle": "Multi-Platform",
+            "description": "Google, Meta, TikTok, Programmatic — satu cerita, banyak layar.",
+            "url": "/id/omni-channel",
+            "isExternal": false
+          },
+          {
+            "title": "Kecerdasan Kreatif",
+            "subtitle": "Creative Intelligence",
+            "description": "Iterasi kreatif berbasis data yang memadukan psikologi dan metrik performa.",
+            "url": "/id/kecerdasan-kreatif",
+            "isExternal": false
+          }
+        ]
+      },
+      {
+        "__component": "sections.rich-text",
+        "content": "## Hasil yang Terbukti\n\n**ROAS: +72%** rata-rata peningkatan\n\n**CPA: -28%** penurunan dengan optimisasi pacing\n\n**CTR: +45%** kenaikan lewat siklus uji kreatif\n\n**Retensi: +33%** bila dikombinasikan dengan re-engagement CRM"
+      },
+      {
+        "__component": "sections.playbook",
+        "title": "Cara Kami Bekerja",
+        "steps": [
+          {
+            "title": "Audit & Alignment",
+            "description": "Pemetaan peluang dan potensi overlap audiens."
+          },
+          {
+            "title": "Blueprint",
+            "description": "Desain alur kreatif, targeting, dan frekuensi yang terintegrasi."
+          },
+          {
+            "title": "Run & Measure",
+            "description": "Implementasi dengan pacing AI dan atribusi lintas platform."
+          },
+          {
+            "title": "Iterasi & Skalasi",
+            "description": "Insight langsung diterjemahkan ke efisiensi baru."
+          }
+        ]
+      },
+      {
+        "__component": "sections.cta-strip",
+        "title": "Siap membangun mesin pertumbuhanmu?",
+        "button": {
+          "label": "Ajukan Pitch",
+          "url": "/id/rfp",
+          "isExternal": false
+        }
+      }
+    ]
+  }
+}

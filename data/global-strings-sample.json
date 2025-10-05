@@ -1,0 +1,53 @@
+{
+  "translation_key": "global-strings-contact",
+  "locales": {
+    "id": {
+      "name_label": "Nama",
+      "name_placeholder": "Masukkan nama lengkap Anda",
+      "email_label": "Email",
+      "email_placeholder": "nama@perusahaan.com",
+      "company_label": "Perusahaan",
+      "company_placeholder": "Nama perusahaan (opsional)",
+      "budget_label": "Kisaran Anggaran",
+      "budget_options": [
+        "< Rp 50 juta",
+        "Rp 50 - 200 juta", 
+        "Rp 200 juta - 1 miliar",
+        "> Rp 1 miliar",
+        "Belum ditentukan"
+      ],
+      "message_label": "Pesan",
+      "message_placeholder": "Ceritakan tentang proyek atau ide Anda...",
+      "submit_label": "Kirim Pesan",
+      "submitting_label": "Mengirim...",
+      "success_msg": "Terima kasih! Kami akan membalas dalam ≤1 hari kerja.",
+      "error_msg": "Gagal mengirim pesan. Silakan coba lagi.",
+      "required_field_msg": "Field ini wajib diisi",
+      "invalid_email_msg": "Format email tidak valid"
+    },
+    "en": {
+      "name_label": "Name",
+      "name_placeholder": "Enter your full name",
+      "email_label": "Email",
+      "email_placeholder": "name@company.com",
+      "company_label": "Company",
+      "company_placeholder": "Company name (optional)",
+      "budget_label": "Budget Range",
+      "budget_options": [
+        "< $50,000",
+        "$50K - $200K",
+        "$200K - $1M", 
+        "> $1M",
+        "To be determined"
+      ],
+      "message_label": "Message",
+      "message_placeholder": "Tell us about your project or idea...",
+      "submit_label": "Send Message",
+      "submitting_label": "Sending...",
+      "success_msg": "Thanks! We'll reply within 1 business day.",
+      "error_msg": "Failed to send message. Please try again.",
+      "required_field_msg": "This field is required",
+      "invalid_email_msg": "Invalid email format"
+    }
+  }
+}
