@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_sections_insights_lists",
+  "info": {
+    "displayName": "Insights List",
+    "description": "Display a list of blog articles/insights with thumbnail, title, summary, and published date",
+    "icon": "newspaper"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "subtitle": {
+      "type": "text",
+      "required": false
+    },
+    "max_items": {
+      "type": "integer",
+      "default": 10,
+      "min": 1,
+      "max": 50
+    },
+    "show_featured_only": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_read_time": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_tags": {
+      "type": "boolean",
+      "default": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "list",
+        "compact"
+      ],
+      "default": "list"
+    }
+  }
+}

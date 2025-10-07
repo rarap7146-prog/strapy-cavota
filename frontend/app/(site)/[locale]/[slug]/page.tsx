@@ -82,7 +82,9 @@ export async function generateStaticParams() {
     // Add Indonesian pages
     if (idPages) {
       for (const page of idPages) {
-        if (page.slug && page.slug !== 'beranda') { // Skip homepage
+        // Skip homepage and custom pages (services, work, etc.)
+        // Custom pages should only be accessible under their proper base paths
+        if (page.slug && page.slug !== 'beranda' && page.page_type !== 'custom') {
           params.push({ locale: 'id', slug: page.slug })
         }
       }
@@ -91,7 +93,8 @@ export async function generateStaticParams() {
     // Add English pages  
     if (enPages) {
       for (const page of enPages) {
-        if (page.slug && page.slug !== 'home') { // Skip homepage
+        // Skip homepage and custom pages (services, work, etc.)
+        if (page.slug && page.slug !== 'home' && page.page_type !== 'custom') {
           params.push({ locale: 'en', slug: page.slug })
         }
       }
@@ -116,6 +119,12 @@ export default async function Page({ params }: PageProps) {
     })
     
     if (!page) {
+      notFound()
+    }
+    
+    // Block access to custom pages (services, work, etc.) at root level
+    // These should only be accessible under their proper base paths
+    if (page.page_type === 'custom') {
       notFound()
     }
     

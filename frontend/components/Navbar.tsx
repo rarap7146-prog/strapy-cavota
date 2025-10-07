@@ -120,7 +120,7 @@ export function Navbar({ locale, strings, siteSettings }: NavbarProps) {
       <div className="container-fluid">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <a href={`/${locale}`} className="flex items-center space-x-2">
+          <Link href={`/${locale}`} className="flex items-center space-x-2">
             {logoSet ? (
               <picture>
                 {logoSet.retina?.url && (
@@ -141,18 +141,18 @@ export function Navbar({ locale, strings, siteSettings }: NavbarProps) {
                 <span className="font-bold text-xl">CAVOTA</span>
               </>
             )}
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-sm font-medium transition-colors hover:text-primary"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -160,12 +160,12 @@ export function Navbar({ locale, strings, siteSettings }: NavbarProps) {
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <LangSwitcher currentLocale={locale} />
-            <a
+            <Link
               href={ctaUrl}
               className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-brand-gradient text-white hover:opacity-90 h-9 rounded-md px-3"
             >
               {strings.header_cta_text}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -198,23 +198,23 @@ export function Navbar({ locale, strings, siteSettings }: NavbarProps) {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-background border-t">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="block px-3 py-2 text-base font-medium text-foreground hover:bg-muted rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="px-3 py-2">
-                <a
+                <Link
                   href={ctaUrl}
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-brand-gradient text-white hover:opacity-90 h-10 px-4 py-2 w-full"
                   onClick={() => setIsOpen(false)}
                 >
                   {strings.header_cta_text}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -284,13 +284,95 @@ function LangSwitcher({ currentLocale }: { currentLocale: Locale }) {
     { code: 'en', name: 'EN', flag: '🇺🇸' },
   ]
 
-  const switchLanguage = (newLocale: string) => {
+  const switchLanguage = async (newLocale: string) => {
     // Store current scroll position
     const currentScrollY = window.scrollY
     
     // Extract the current path without the locale prefix
     const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, '') || '/'
-    const newPath = `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`
+    
+    // Extract the actual page slug (last segment of the path, or full path if no segments)
+    const pathSegments = pathWithoutLocale.split('/').filter(Boolean)
+    const pageSlug = pathSegments.length > 0 ? pathSegments[pathSegments.length - 1] : ''
+    
+    // Base paths that should use static translation
+    const exactBasePaths = ['', 'wawasan', 'insights', 'layanan', 'services', 'karya', 'work', 'tentang', 'about', 'kontak', 'contact']
+    
+    let translatedPath = pathWithoutLocale
+    
+    // Check if it's an exact base path (no sub-page)
+    if (exactBasePaths.includes(pageSlug) || pathWithoutLocale === '/') {
+      // Path translation mapping for base pages only
+      const pathTranslations: Record<string, Record<string, string>> = {
+        '/wawasan': { id: '/wawasan', en: '/insights' },
+        '/insights': { id: '/wawasan', en: '/insights' },
+        '/layanan': { id: '/layanan', en: '/services' },
+        '/services': { id: '/layanan', en: '/services' },
+        '/karya': { id: '/karya', en: '/work' },
+        '/work': { id: '/karya', en: '/work' },
+        '/tentang': { id: '/tentang', en: '/about' },
+        '/about': { id: '/tentang', en: '/about' },
+        '/kontak': { id: '/kontak', en: '/contact' },
+        '/contact': { id: '/kontak', en: '/contact' },
+        '/': { id: '/', en: '/' },
+      }
+      
+      translatedPath = pathTranslations[pathWithoutLocale]?.[newLocale as 'id' | 'en'] || pathWithoutLocale
+    } else {
+      // For any other page (service details, insights, etc.), query the API
+      try {
+        console.log('Translating slug:', pageSlug, 'from', currentLocale, 'to', newLocale)
+        // Use window.location.origin to ensure we call the correct host (works in both dev and prod)
+        const apiUrl = `${window.location.origin}/api/translate-path?slug=${encodeURIComponent(pageSlug)}&currentLocale=${currentLocale}&targetLocale=${newLocale}`
+        const response = await fetch(apiUrl)
+        if (response.ok) {
+          const data = await response.json()
+          console.log('API response:', data)
+          if (data.slug && data.slug !== pageSlug) {
+            // Successfully got a translated slug
+            // Now determine the correct base path for the target locale
+            const currentBasePath = pathSegments.length > 1 ? pathSegments[0] : ''
+            
+            // Map base paths to their translations
+            const basePathMap: Record<string, Record<string, string>> = {
+              'services': { id: 'layanan', en: 'services' },
+              'layanan': { id: 'layanan', en: 'services' },
+              'insights': { id: 'wawasan', en: 'insights' },
+              'wawasan': { id: 'wawasan', en: 'insights' },
+              'work': { id: 'karya', en: 'work' },
+              'karya': { id: 'karya', en: 'work' },
+            }
+            
+            // Get the translated base path
+            const translatedBasePath = currentBasePath && basePathMap[currentBasePath] 
+              ? basePathMap[currentBasePath][newLocale as 'id' | 'en']
+              : currentBasePath
+            
+            // Construct the full path with base path + translated slug
+            if (translatedBasePath) {
+              translatedPath = `/${translatedBasePath}/${data.slug}`
+            } else {
+              translatedPath = `/${data.slug}`
+            }
+            console.log('Translated path set to:', translatedPath)
+          } else {
+            // No translation found or same slug, keep original path
+            translatedPath = pathWithoutLocale
+          }
+        } else {
+          console.error('API response not ok:', response.status)
+          // Keep original path as fallback
+          translatedPath = pathWithoutLocale
+        }
+      } catch (error) {
+        console.error('Failed to translate path:', error)
+        // Keep original path as fallback
+        translatedPath = pathWithoutLocale
+      }
+    }
+    
+    const newPath = `/${newLocale}${translatedPath === '/' ? '' : translatedPath}`
+    console.log('Final new path:', newPath)
     
     // Store scroll position in sessionStorage for more reliable restoration
     sessionStorage.setItem('preserveScrollPosition', currentScrollY.toString())
