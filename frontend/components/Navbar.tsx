@@ -322,8 +322,18 @@ function LangSwitcher({ currentLocale }: { currentLocale: Locale }) {
       // For any other page (service details, insights, etc.), query the API
       try {
         console.log('Translating slug:', pageSlug, 'from', currentLocale, 'to', newLocale)
+        
+        // Detect content type based on current path
+        const currentBasePath = pathSegments.length > 1 ? pathSegments[0] : ''
+        let contentType = 'pages'
+        if (currentBasePath === 'insights' || currentBasePath === 'wawasan') {
+          contentType = 'insights'
+        } else if (currentBasePath === 'work' || currentBasePath === 'karya') {
+          contentType = 'works'
+        }
+        
         // Use window.location.origin to ensure we call the correct host (works in both dev and prod)
-        const apiUrl = `${window.location.origin}/api/translate-path?slug=${encodeURIComponent(pageSlug)}&currentLocale=${currentLocale}&targetLocale=${newLocale}`
+        const apiUrl = `${window.location.origin}/next-api/translate-path?slug=${encodeURIComponent(pageSlug)}&currentLocale=${currentLocale}&targetLocale=${newLocale}&type=${contentType}`
         const response = await fetch(apiUrl)
         if (response.ok) {
           const data = await response.json()
