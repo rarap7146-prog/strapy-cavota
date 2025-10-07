@@ -212,6 +212,34 @@ export interface SectionsHero extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsInsightsList extends Struct.ComponentSchema {
+  collectionName: 'components_sections_insights_lists';
+  info: {
+    description: 'Display a list of blog articles/insights with thumbnail, title, summary, and published date';
+    displayName: 'Insights List';
+    icon: 'newspaper';
+  };
+  attributes: {
+    layout: Schema.Attribute.Enumeration<['list', 'compact']> &
+      Schema.Attribute.DefaultTo<'list'>;
+    max_items: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 50;
+          min: 1;
+        },
+        number
+      > &
+      Schema.Attribute.DefaultTo<10>;
+    show_featured_only: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
+    show_read_time: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    show_tags: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsMetricsGrid extends Struct.ComponentSchema {
   collectionName: 'components_sections_metrics_grids';
   info: {
@@ -605,6 +633,7 @@ declare module '@strapi/strapi' {
       'sections.dynamic-content': SectionsDynamicContent;
       'sections.faq': SectionsFaq;
       'sections.hero': SectionsHero;
+      'sections.insights-list': SectionsInsightsList;
       'sections.metrics-grid': SectionsMetricsGrid;
       'sections.metrics-showcase': SectionsMetricsShowcase;
       'sections.playbook': SectionsPlaybook;

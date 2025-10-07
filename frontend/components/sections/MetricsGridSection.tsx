@@ -60,9 +60,9 @@ function renderMetricsSection(data: MetricsGridData) {
   return (
     <section className="container-fluid py-16 bg-muted/30">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">{title}</h2>
+        <h2 className="text-3xl text-center md:text-4xl font-bold mb-4">{title}</h2>
         {subtitle && (
-          <p className="text-xl text-muted-foreground max-w-3xl">
+          <p className="text-xl text-center text-muted-foreground">
             {subtitle}
           </p>
         )}

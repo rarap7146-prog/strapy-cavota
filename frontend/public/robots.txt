@@ -1,0 +1,38 @@
+# robots.txt for cavota.id
+# Generated for Next.js + Strapi v5
+
+User-agent: *
+Allow: /
+
+# Allow all pages
+Allow: /id/
+Allow: /en/
+
+# Allow services
+Allow: /id/layanan/
+Allow: /en/services/
+
+# Allow insights
+Allow: /id/wawasan/
+Allow: /en/insights/
+
+# Allow work/portfolio
+Allow: /id/karya/
+Allow: /en/work/
+
+# Block API routes (not for indexing)
+Disallow: /api/
+Disallow: /next-api/
+
+# Block Next.js internals
+Disallow: /_next/
+Disallow: /static/
+
+# Block admin/draft content
+Disallow: /*?preview=*
+
+# Sitemap location
+Sitemap: https://cavota.id/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+# Crawl-delay: 1

@@ -34,6 +34,15 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/[locale]/insights/[slug]",
+      "regex": "^/([^/]+?)/insights/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/insights/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/[locale]/insights/[slug]/amp",
       "regex": "^/([^/]+?)/insights/([^/]+?)/amp(?:/)?$",
       "routeKeys": {
@@ -70,6 +79,24 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/services/(?<nxtPslug>[^/]+?)(?:/)?$"
     },
     {
+      "page": "/[locale]/wawasan/[slug]",
+      "regex": "^/([^/]+?)/wawasan/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wawasan/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/wawasan/[slug]/amp",
+      "regex": "^/([^/]+?)/wawasan/([^/]+?)/amp(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/wawasan/(?<nxtPslug>[^/]+?)/amp(?:/)?$"
+    },
+    {
       "page": "/[locale]/work/[slug]",
       "regex": "^/([^/]+?)/work/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -94,6 +121,36 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/next-api/proxy/global-strings",
+      "regex": "^/next\\-api/proxy/global\\-strings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/next\\-api/proxy/global\\-strings(?:/)?$"
+    },
+    {
+      "page": "/next-api/proxy/site-settings",
+      "regex": "^/next\\-api/proxy/site\\-settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/next\\-api/proxy/site\\-settings(?:/)?$"
+    },
+    {
+      "page": "/next-api/revalidate",
+      "regex": "^/next\\-api/revalidate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/next\\-api/revalidate(?:/)?$"
+    },
+    {
+      "page": "/next-api/rfp-submissions",
+      "regex": "^/next\\-api/rfp\\-submissions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/next\\-api/rfp\\-submissions(?:/)?$"
+    },
+    {
+      "page": "/next-api/translate-path",
+      "regex": "^/next\\-api/translate\\-path(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/next\\-api/translate\\-path(?:/)?$"
     }
   ],
   "dataRoutes": [],

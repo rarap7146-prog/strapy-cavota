@@ -753,7 +753,16 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'>;
     page_type: Schema.Attribute.Enumeration<
-      ['home', 'services', 'about', 'contact', 'rfp', 'custom']
+      [
+        'home',
+        'services',
+        'about',
+        'contact',
+        'rfp',
+        'insights',
+        'works',
+        'custom',
+      ]
     > &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
@@ -775,6 +784,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.rich-text',
         'sections.faq',
         'sections.metrics-grid',
+        'sections.insights-list',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

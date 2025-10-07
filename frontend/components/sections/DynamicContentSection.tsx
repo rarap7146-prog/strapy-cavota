@@ -2,6 +2,7 @@
 
 import { useDynamicContent } from '@/hooks/useDynamicContent';
 import ReactMarkdown from 'react-markdown';
+import { useState, FormEvent } from 'react';
 
 interface DynamicContentSectionProps {
   data: {
@@ -19,6 +20,68 @@ interface DynamicContentSectionProps {
 
 export function DynamicContentSection({ data, locale }: DynamicContentSectionProps) {
   const { siteSettings, globalStrings, loading, error, processTemplate } = useDynamicContent(locale);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    budget_band: '',
+    message: ''
+  });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
+
+  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setSubmitMessage(null);
+
+    try {
+      const response = await fetch('/next-api/rfp-submissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          locale
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setSubmitMessage({
+          type: 'success',
+          text: result.message || (locale === 'id' ? 'Pesan berhasil dikirim!' : 'Message sent successfully!')
+        });
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          budget_band: '',
+          message: ''
+        });
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (err) {
+      console.error('Form submission error:', err);
+      setSubmitMessage({
+        type: 'error',
+        text: locale === 'id' 
+          ? 'Gagal mengirim pesan. Silakan coba lagi.' 
+          : 'Failed to send message. Please try again.'
+      });
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -146,59 +209,110 @@ export function DynamicContentSection({ data, locale }: DynamicContentSectionPro
             <ReactMarkdown>{processedContent}</ReactMarkdown>
           </div>
           
-          <form className="space-y-6 bg-card p-8 rounded-lg border">
+          {submitMessage && (
+            <div className={`mb-6 p-4 rounded-lg ${
+              submitMessage.type === 'success' 
+                ? 'bg-green-50 text-green-800 border border-green-200' 
+                : 'bg-red-50 text-red-800 border border-red-200'
+            }`}>
+              {submitMessage.text}
+            </div>
+          )}
+          
+          <form onSubmit={handleFormSubmit} className="space-y-6 bg-card p-8 rounded-lg border">
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-sm font-medium mb-2">
                 {globalStrings?.name_label || (locale === 'id' ? 'Nama' : 'Name')}
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleFormChange}
                 className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
                 required
+                disabled={submitting}
               />
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-sm font-medium mb-2">
                 {globalStrings?.email_label || 'Email'}
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <input
                 type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleFormChange}
                 className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
                 required
+                disabled={submitting}
               />
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label htmlFor="budget_band" className="block text-sm font-medium mb-2">
                 {globalStrings?.budget_label || (locale === 'id' ? 'Anggaran' : 'Budget')}
               </label>
-              <select className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring">
+              <select 
+                id="budget_band"
+                name="budget_band"
+                value={formData.budget_band}
+                onChange={handleFormChange}
+                className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+                disabled={submitting}
+              >
                 <option value="">
                   {locale === 'id' ? 'Pilih anggaran' : 'Select budget'}
                 </option>
-                <option value="<10M">&lt; 10 Juta</option>
-                <option value="10-50M">10 - 50 Juta</option>
-                <option value="50-100M">50 - 100 Juta</option>
-                <option value=">100M">&gt; 100 Juta</option>
+                <option value="under_50m_idr">
+                  {locale === 'id' ? '< 50 Juta' : '< 50 Million IDR'}
+                </option>
+                <option value="from_50m_200m_idr">
+                  {locale === 'id' ? '50 Juta - 200 Juta' : '50M - 200M IDR'}
+                </option>
+                <option value="from_200m_1b_idr">
+                  {locale === 'id' ? '200 Juta - 1 Miliar' : '200M - 1B IDR'}
+                </option>
+                <option value="over_1b_idr">
+                  {locale === 'id' ? '> 1 Miliar' : '> 1 Billion IDR'}
+                </option>
+                <option value="multi_million_usd">
+                  {locale === 'id' ? 'Multi Juta USD' : 'Multi-Million USD'}
+                </option>
               </select>
             </div>
             
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label htmlFor="message" className="block text-sm font-medium mb-2">
                 {locale === 'id' ? 'Pesan' : 'Message'}
+                <span className="text-red-500 ml-1">*</span>
               </label>
               <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleFormChange}
                 rows={4}
                 className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring"
+                required
+                disabled={submitting}
               />
             </div>
             
             <button
               type="submit"
-              className="w-full bg-brand-gradient text-white py-3 rounded-md hover:opacity-90 transition-opacity"
+              disabled={submitting}
+              className="w-full bg-brand-gradient text-white py-3 rounded-md hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {globalStrings?.submit_label || (locale === 'id' ? 'Kirim Pesan' : 'Send Message')}
+              {submitting 
+                ? (locale === 'id' ? 'Mengirim...' : 'Sending...') 
+                : (globalStrings?.submit_label || (locale === 'id' ? 'Kirim Pesan' : 'Send Message'))
+              }
             </button>
           </form>
         </div>

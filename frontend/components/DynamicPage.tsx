@@ -8,6 +8,7 @@ import { PlaybookSection } from './sections/PlaybookSection'
 import { DynamicContentSection } from './sections/DynamicContentSection'
 import { TestimonialCarouselSection } from './sections/TestimonialCarouselSection'
 import { CaseCarouselSection } from './sections/CaseCarouselSection'
+import { InsightsListSection } from './sections/InsightsListSection'
 
 interface Section {
   __component: string
@@ -31,6 +32,7 @@ const sectionRegistry = {
   'sections.dynamic-content': DynamicContentSection,
   'sections.testimonial-carousel': TestimonialCarouselSection,
   'sections.case-carousel': CaseCarouselSection,
+  'sections.insights-list': InsightsListSection,
 }
 
 export function DynamicPage({ sections, locale }: DynamicPageProps) {

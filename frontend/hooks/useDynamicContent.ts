@@ -43,12 +43,14 @@ export const useDynamicContent = (locale: 'id' | 'en' = 'id') => {
         setError(null);
 
         const [settingsRes, stringsRes] = await Promise.all([
-          fetch('/api/proxy/site-settings'),
-          fetch(`/api/proxy/global-strings?locale=${locale}`)
+          fetch('/next-api/proxy/site-settings'),
+          fetch(`/next-api/proxy/global-strings?locale=${locale}`)
         ]);
 
         if (!settingsRes.ok || !stringsRes.ok) {
-          throw new Error('Failed to fetch dynamic content data');
+          const settingsError = !settingsRes.ok ? `site-settings: ${settingsRes.status}` : '';
+          const stringsError = !stringsRes.ok ? `global-strings: ${stringsRes.status}` : '';
+          throw new Error(`Failed to fetch dynamic content data (${settingsError} ${stringsError})`);
         }
 
         const settingsData = await settingsRes.json();
