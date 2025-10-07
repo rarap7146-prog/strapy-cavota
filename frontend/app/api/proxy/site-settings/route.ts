@@ -1,8 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Use environment variable for Strapi URL
+const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
+
 export async function GET() {
   try {
-    const response = await fetch(`${process.env.STRAPI_URL}/api/site-settings`, {
+    const response = await fetch(`${STRAPI_URL}/api/site-settings`, {
       headers: {
         'Authorization': `Bearer ${process.env.STRAPI_TOKEN}`,
         'Content-Type': 'application/json',

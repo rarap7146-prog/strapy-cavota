@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const STRAPI_URL = 'http://localhost:1337';
+const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;

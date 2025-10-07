@@ -39,7 +39,7 @@ interface Insight {
 }
 
 // Use internal Strapi URL for server-side rendering
-const STRAPI_URL = 'http://localhost:1337';
+const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 
 export async function InsightsListSection({ data, locale }: InsightsListSectionProps) {
   const { 

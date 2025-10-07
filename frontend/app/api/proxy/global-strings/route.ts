@@ -1,11 +1,14 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server'
+
+// Internal Strapi URL for server-to-server communication
+const STRAPI_URL = process.env.STRAPI_URL || 'http://localhost:1337';
 
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const locale = searchParams.get('locale') || 'id';
 
-    const response = await fetch(`${process.env.STRAPI_URL}/api/global-strings?locale=${locale}`, {
+    const response = await fetch(`${STRAPI_URL}/api/global-strings?locale=${locale}`, {
       headers: {
         'Authorization': `Bearer ${process.env.STRAPI_TOKEN}`,
         'Content-Type': 'application/json',
