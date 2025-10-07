@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/proxy/global-strings/route": "/api/proxy/global-strings",
+  "/api/proxy/site-settings/route": "/api/proxy/site-settings",
+  "/api/revalidate/route": "/api/revalidate",
+  "/api/test-page/route": "/api/test-page",
+  "/(site)/[locale]/insights/[slug]/amp/route": "/[locale]/insights/[slug]/amp",
+  "/(site)/[locale]/page": "/[locale]",
+  "/(site)/[locale]/[slug]/page": "/[locale]/[slug]",
+  "/(site)/[locale]/layanan/[slug]/page": "/[locale]/layanan/[slug]",
+  "/(site)/[locale]/services/[slug]/page": "/[locale]/services/[slug]",
+  "/(site)/[locale]/karya/[slug]/page": "/[locale]/karya/[slug]",
+  "/(site)/[locale]/work/[slug]/page": "/[locale]/work/[slug]"
+}

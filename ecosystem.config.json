@@ -1,19 +1,50 @@
 {
-  "name": "strapi-linkgacor",
-  "script": "npm",
-  "args": "run develop",
-  "cwd": "/var/www/cavota.id",
-  "instances": 1,
-  "exec_mode": "fork",
-  "watch": false,
-  "max_memory_restart": "1G",
-  "env": {
-    "NODE_ENV": "development",
-    "HOST": "0.0.0.0",
-    "PORT": "1337"
-  },
-  "log_file": "/var/log/pm2/strapi-linkgacor.log",
-  "out_file": "/var/log/pm2/strapi-linkgacor-out.log",
-  "error_file": "/var/log/pm2/strapi-linkgacor-error.log",
-  "time": true
+  "apps": [
+    {
+      "name": "cavota-strapi",
+      "script": "npm",
+      "args": "run develop",
+      "cwd": "/var/www/linkgacor.one",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "1G",
+      "env": {
+        "NODE_ENV": "development",
+        "HOST": "0.0.0.0",
+        "PORT": "1337"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "HOST": "0.0.0.0",
+        "PORT": "1337"
+      },
+      "log_file": "/var/log/pm2/cavota-strapi.log",
+      "out_file": "/var/log/pm2/cavota-strapi-out.log",
+      "error_file": "/var/log/pm2/cavota-strapi-error.log",
+      "time": true
+    },
+    {
+      "name": "cavota-frontend",
+      "script": "npm",
+      "args": "run dev",
+      "cwd": "/var/www/linkgacor.one/frontend",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "512M",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "3000"
+      },
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": "3000"
+      },
+      "log_file": "/var/log/pm2/cavota-frontend.log",
+      "out_file": "/var/log/pm2/cavota-frontend-out.log",
+      "error_file": "/var/log/pm2/cavota-frontend-error.log",
+      "time": true
+    }
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ui_proof_items",
+  "info": {
+    "displayName": "Proof Item",
+    "description": "Individual proof item with logos and note"
+  },
+  "options": {},
+  "attributes": {
+    "note": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/proxy/global-strings/route": "app/api/proxy/global-strings/route.js",
+  "/api/proxy/site-settings/route": "app/api/proxy/site-settings/route.js",
+  "/api/revalidate/route": "app/api/revalidate/route.js",
+  "/api/test-page/route": "app/api/test-page/route.js",
+  "/(site)/[locale]/insights/[slug]/amp/route": "app/(site)/[locale]/insights/[slug]/amp/route.js",
+  "/(site)/[locale]/page": "app/(site)/[locale]/page.js",
+  "/(site)/[locale]/[slug]/page": "app/(site)/[locale]/[slug]/page.js",
+  "/(site)/[locale]/layanan/[slug]/page": "app/(site)/[locale]/layanan/[slug]/page.js",
+  "/(site)/[locale]/services/[slug]/page": "app/(site)/[locale]/services/[slug]/page.js",
+  "/(site)/[locale]/karya/[slug]/page": "app/(site)/[locale]/karya/[slug]/page.js",
+  "/(site)/[locale]/work/[slug]/page": "app/(site)/[locale]/work/[slug]/page.js"
+}

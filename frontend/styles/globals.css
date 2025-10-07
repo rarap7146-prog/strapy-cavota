@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme */
+:root {
+  --background: 255 255 255;
+  --foreground: 0 0 0;
+  --card: 216 216 216;
+  --card-foreground: 0 0 0;
+  --popover: 255 255 255;
+  --popover-foreground: 0 0 0;
+  --muted: 216 216 216;
+  --muted-foreground: 53 53 53;
+  --border: 216 216 216;
+  --input: 216 216 216;
+  --primary: 229 30 41; /* #E51E29 */
+  --primary-foreground: 255 255 255;
+  --accent: 222 238 237; /* #DEEEED */
+  --accent-foreground: 10 10 10;
+  --ring: 229 30 41;
+  --brand-gradient: linear-gradient(90deg, #A20F16, #E51E29);
+}
+
+/* Dark theme */
+.dark {
+  --background: 0 0 0;
+  --foreground: 255 255 255;
+  --card: 53 53 53;
+  --card-foreground: 255 255 255;
+  --popover: 53 53 53;
+  --popover-foreground: 255 255 255;
+  --muted: 53 53 53;
+  --muted-foreground: 216 216 216;
+  --border: 53 53 53;
+  --input: 53 53 53;
+  --primary: 229 30 41;
+  --primary-foreground: 255 255 255;
+  --accent: 222 238 237;
+  --accent-foreground: 255 255 255;
+  --ring: 229 30 41;
+  --brand-gradient: linear-gradient(90deg, #A20F16, #E51E29);
+}
+
+/* Base styles and resets */
+* {
+  border: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid rgb(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Fluid typography */
+h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.25rem);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smooth scrolling for non-reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Link styles */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Selection styles */
+::selection {
+  background-color: rgb(var(--primary) / 0.2);
+  color: rgb(var(--foreground));
+}
+
+/* Loading and disabled states */
+.loading {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Utility classes */
+.container-fluid {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container-fluid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-fluid {
+    max-width: 1280px;
+  }
+}

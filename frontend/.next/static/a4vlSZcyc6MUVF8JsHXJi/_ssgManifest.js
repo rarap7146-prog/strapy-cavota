@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[locale]\u002F[slug]","\u002F[locale]\u002Fkarya\u002F[slug]","\u002F[locale]\u002Flayanan\u002F[slug]","\u002F[locale]\u002Fservices\u002F[slug]","\u002F[locale]\u002Fwork\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

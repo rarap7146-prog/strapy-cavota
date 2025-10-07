@@ -1,0 +1,41 @@
+{
+  "apps": [
+    {
+      "name": "cavota-strapi-prod",
+      "script": "npm",
+      "args": "run start",
+      "cwd": "/var/www/linkgacor.one",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "1G",
+      "env_production": {
+        "NODE_ENV": "production",
+        "HOST": "0.0.0.0",
+        "PORT": "1337"
+      },
+      "log_file": "/var/log/pm2/cavota-strapi-prod.log",
+      "out_file": "/var/log/pm2/cavota-strapi-prod-out.log",
+      "error_file": "/var/log/pm2/cavota-strapi-prod-error.log",
+      "time": true
+    },
+    {
+      "name": "cavota-frontend-prod",
+      "script": "npm",
+      "args": "run start",
+      "cwd": "/var/www/linkgacor.one/frontend",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "512M",
+      "env_production": {
+        "NODE_ENV": "production",
+        "PORT": "3000"
+      },
+      "log_file": "/var/log/pm2/cavota-frontend-prod.log",
+      "out_file": "/var/log/pm2/cavota-frontend-prod-out.log",
+      "error_file": "/var/log/pm2/cavota-frontend-prod-error.log",
+      "time": true
+    }
+  ]
+}
