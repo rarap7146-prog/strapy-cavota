@@ -46,7 +46,7 @@ Use the following methods to upload your favicon zip:
 #### Option A: Using Postman/Insomnia
 
 ```
-POST https://cavota.id/api/favicon-settings/upload
+POST https://cavota.id/next-api/favicon-upload
 Content-Type: multipart/form-data
 
 Body:
@@ -56,7 +56,7 @@ Body:
 #### Option B: Using cURL
 
 ```bash
-curl -X POST https://cavota.id/api/favicon-settings/upload \
+curl -X POST https://cavota.id/next-api/favicon-upload \
   -F "file=@/path/to/favicons.zip"
 ```
 
@@ -66,7 +66,7 @@ curl -X POST https://cavota.id/api/favicon-settings/upload \
 const formData = new FormData();
 formData.append('file', faviconZipFile);
 
-const response = await fetch('https://cavota.id/api/favicon-settings/upload', {
+const response = await fetch('https://cavota.id/next-api/favicon-upload', {
   method: 'POST',
   body: formData
 });
@@ -106,7 +106,7 @@ Check if favicons are accessible:
 
 ```bash
 # Check uploaded files
-curl https://cavota.id/api/favicon-settings
+curl https://cavota.id/next-api/favicon-settings
 
 # Test individual files
 curl https://cavota.id/favicons/favicon.ico
@@ -193,9 +193,11 @@ curl https://cavota.id/favicons/site.webmanifest
 ### File Flow
 
 ```
-[User] → [POST /api/favicon-settings/upload]
+[User] → [POST /next-api/favicon-upload]
          ↓
-    [Strapi Controller]
+    [Next.js API Handler]
+         ↓
+    [Forward to Strapi]
          ↓
     [Extract ZIP]
          ↓
@@ -203,9 +205,11 @@ curl https://cavota.id/favicons/site.webmanifest
          ↓
     [Update Database]
 
-[Next.js Layout] → [GET /api/favicon-settings]
+[Next.js Layout] → [GET /next-api/favicon-settings]
                    ↓
-              [Fetch Available Files]
+              [Fetch from Strapi]
+                   ↓
+              [Return Available Files]
                    ↓
               [Generate <link> tags]
 ```
@@ -220,13 +224,13 @@ curl https://cavota.id/favicons/site.webmanifest
 
 ## API Reference
 
-### POST /api/favicon-settings/upload
+### POST /next-api/favicon-upload
 
-Upload favicon zip file.
+Upload favicon zip file (proxies to Strapi).
 
 **Request**:
 ```
-POST /api/favicon-settings/upload
+POST /next-api/favicon-upload
 Content-Type: multipart/form-data
 
 Body:
@@ -263,13 +267,13 @@ Body:
 }
 ```
 
-### GET /api/favicon-settings
+### GET /next-api/favicon-settings
 
-Get current favicon configuration.
+Get current favicon configuration (proxies to Strapi).
 
 **Request**:
 ```
-GET /api/favicon-settings
+GET /next-api/favicon-settings
 ```
 
 **Response**:
